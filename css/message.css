@@ -28,7 +28,7 @@
 
 @media (max-width: 769px){
  .avatar{
-  display: none !important;
+  /* display: none !important; */
   
  }
  .w-75{
