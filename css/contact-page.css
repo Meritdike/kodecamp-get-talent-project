@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.image-section{
+    background-image: url(../img/contact-page-image.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+.form-section {
+    background-color: rgba(245, 245, 245, 1);
+}
+
+.bg-blue {
+    background-color: rgba(39, 118, 234, 1);
+    color: #fff;
+}
