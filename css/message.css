@@ -6,6 +6,8 @@
  font-family: "Inter", sans-serif !important;
 }
 
+
+
 .rounded-top{
  border-top-left-radius: 5px !important;
  border-top-right-radius: 5px !important;
@@ -25,22 +27,26 @@
  height: 70px;
 }
 
-
-@media (max-width: 769px){
- .avatar{
-  /* display: none !important; */
+@media (max-width: 978px){
+  .sender .fs-7{
+    padding: 0px !important;
+    
+  } 
   
- }
- .w-75{
-  width: 90% !important;
-  margin: 0 auto;
-  margin: 10px auto !important;
- }
- .chat{
-  width: 100% !important;
-  padding-left: 0 !important;
- }
+  .w-75{
+    width: 90% !important;
+    
+  }
 }
+
+@media (max-width: 401px){
+  .chat{
+    display: none !important;
+  }
+  
+}
+
+
   
 
 
