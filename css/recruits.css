@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.bg-blue {
+    background-color: rgba(39, 118, 234, 1);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.75);
+}
+
+.btn-outline-blue {
+    width: 113px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.btn-outline-blue:hover {
+    border: 2px solid transparent;;
+    border-radius: 8px;
+    background-color: #fff;
+    color: rgba(39, 118, 234, 1);
+}
+
+.bg-footer {
+    background-color: rgba(8, 24, 47, 1);
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+
+/* new css */
+
+.bg-primary, .btn-primary{
+    background: rgba(39, 118, 234, 1)!important;
+
+}
+.hero-bg{
+    background: url("../img/R-hero.img.png") no-repeat center center/cover;
+}
+.hero-txt{
+    height: inherit;
+    align-content: center;
+}
+.ex-hero-btn-wrap{
+    background: rgba(245, 245, 245, 1)!important;
+}
+@media (max-width: 768px) {
+    .carrd{
+        max-width: 100%;
+        border: none;
+    }
+    .hero-txt{
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .card-text{
+        font-size: 12px!important;
+    }
+    .btn2{
+        margin: 20px 15px 0 0;
+    }
+    /* .btn1{  
+    } */
+    .btn1-1{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 767px) {
+    .carrd{
+        max-width: 100%;
+        border: none;
+    }
+    .card-text{
+        font-size: 12px!important;
+    }
+    .hero-txt{
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .btn2{
+        margin: 20px 15px 0 0;
+    }
+    .btn1-1{
+        margin-bottom: 10px;
+    }
+}
