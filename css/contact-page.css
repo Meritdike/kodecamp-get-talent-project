@@ -26,3 +26,29 @@
     background-color: rgba(39, 118, 234, 1);
     color: #fff;
 }
+
+.bg-blue:focus {
+    background-color: rgba(39, 118, 234, 0.8);
+    color: #fff;
+}
+
+.main-content {
+    height: 85vh;
+}
+
+.success-box {
+    width: 70vh;
+    border: 2px solid #3AB418;
+    border-radius: 8px;
+}
+
+.green {
+    background-color: #3AB418;
+    font-family: 'Calligraffitti', cursive;
+}
+
+@media (max-width: 426px) {
+    .success-box {
+        width: 100%;
+    }
+}
