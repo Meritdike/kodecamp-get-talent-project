@@ -46,23 +46,42 @@
 
   @media(max-width:770px ){
    .right{
-   width: 100% !important;
+   width: 60% !important;
+   }
+   .recruit{
+    font-size: 18px !important;
+    margin-bottom: 0;
+   }
+   .ux, .visual, .design{
+    margin:0 5px;
+    font-size: 16px !important;
+   }
+   .left{
+    width: 40% !important
    }
   }
 
-   @media(max-width:401px){
+   @media(max-width:426px){
+ .container{
+   
+ }
  .right{
   width: 100% !important;
   font-size: 14px;
   margin: 0 !important;
  }
+ 
  .w-25{
   width: 100% !important;
   text-align: center !important;
  }
  .wrapper{
   flex-direction: column !important;
-  margin-top: 10px;
+  margin-top: 10px; 
+ }
+
+ .wrapper-container{
+   background-color: #fff !important;
  }
  .border-dark{
     border: none !important;
