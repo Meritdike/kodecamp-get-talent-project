@@ -60,13 +60,13 @@
         max-width: 100%;
         border: none;
     }
+    .card-text{
+        font-size: 12px!important;
+    }
     .hero-txt{
         align-content: center;
         justify-content: center;
         text-align: center;
-    }
-    .card-text{
-        font-size: 12px!important;
     }
     .btn2{
         margin: 20px 15px 0 0;
