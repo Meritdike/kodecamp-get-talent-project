@@ -76,6 +76,9 @@
     .btn1-1{
         margin-bottom: 10px;
     }
+    .section-2{
+        width: 50%;
+    }
 }
 @media (max-width: 767px) {
     .carrd{
