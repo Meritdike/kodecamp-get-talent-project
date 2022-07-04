@@ -1,0 +1,52 @@
+body{font-family: 'Inter', sans-serif;}
+
+.bg-blue { background-color: rgba(39, 118, 234, 1);}
+
+.navbar-dark .navbar-nav .nav-link {color: rgba(255,255,255,.75);}
+
+.btn-outline-blue {width: 118px; border: 2px solid #fff; border-radius: 8px; background-color: transparent; color: #fff;}
+
+.btn-outline-blue:hover {border: 2px solid transparent;; border-radius: 8px; background-color: #fff; color: rgba(39, 118, 234, 1);}
+
+.bg-footer {background-color: rgba(8, 24, 47, 1);}
+
+.fs-14 {font-size: 14px;}
+
+.get-started{position: relative;}
+
+.gs{background-image: url('../img/first-circles.png'); background-repeat: no-repeat; background-position: left top; background-size: 100% 100%; width:80px; height: 50%; position: absolute; z-index: -1; }
+
+.circle2 img{position: absolute; bottom: 0px; right: 0px; height: auto; max-width: 80px; z-index: -1;}
+
+.trust, .client{background-color: #D4E4FB;}
+
+.trust{color: #08182F;}
+
+.lp-blog{background-color: #F5F5F5;}
+
+.btn-primary{background-color: #2776EA !important;}
+.companies img{width: 70%;padding-bottom: 10px;padding-top: 10px;filter: grayscale(100%);transition: all 0.4s ease-in-out;} 
+.companies img:hover{filter: grayscale(0);transform: scale(1.5);  transition: ease-in-out 1s;}
+.blog-image1, .blog-image2, .blog-image3{position: relative;} 
+.blog-image1{background-image: url('../img/lp-blog2.png'); background-size: cover; height: 50vh;}
+.blog-image2{background-image: url('../img/lp-coding.png'); background-size: cover; height: 50vh;}
+.blog-image3{background-image: url('../img/lp-research.png'); background-size: cover; height: 50vh;}
+.blog-image1 .read, .blog-image2 .read2, .blog-image3 .read3{bottom: 0%; position: absolute; background-color: #2B2B2B; opacity: 0.8; background-size: cover; right: 0%; left: 0%; display: none;}
+.blog-image1:hover, .blog-image2:hover, .blog-image3:hover{transform: scale(1.1) !important;  transition: ease-in-out 1s;}
+@media(max-width:425px){
+    .blogg{margin: 0 20px !important;}
+}
+@media (max-width: 768px){
+    .companies img{width: 40%;}
+    .text{padding-top: 0 !important; margin-top: 0 !important;}
+    .textt{padding-left: 20px !important; }
+    .exp-btn{margin-left: 20px !important;}
+    .what-we-do{margin-bottom: 0 !important;}
+    .what-we-do h1{padding-top: 30px !important;}
+}
+@media (max-width: 768px) and (min-width: 490px){
+    .image img{padding-top: 80px !important;}
+    .hire-expert{padding: 0 !important;}
+    .gs-image img{margin-top: 40px !important;}
+    .blog-image3{margin: 0 0 0 30px !important;}
+}
