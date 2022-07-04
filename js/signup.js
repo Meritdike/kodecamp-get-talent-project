@@ -1,3 +1,4 @@
+const name = document.getElementById("name");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const togglePassword = document.getElementById("eyeicon");
@@ -32,6 +33,7 @@ function iconDisplay() {
 }
 
 email.addEventListener('input', changeButtonColor);
+name.addEventListener('input', changeButtonColor);
 
 function changeButtonColor() {
     signUp.classList.add("button-active-color")
