@@ -22,3 +22,21 @@
 .fs-14 {
     font-size: 14px;
 }
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .mobile {
+        display: block;
+    }
+
+    .navbar-nav i {
+        display: none;
+    }
+
+    .navbar-nav {
+        font-weight: bold;
+    }
+}
