@@ -58,6 +58,9 @@
 .ex-hero-btn-wrap{
     background: rgba(245, 245, 245, 1)!important;
 }
+.more{
+    width: 50%!important;
+}
 @media (max-width: 768px) {
     .carrd{
         max-width: 100%;
@@ -138,5 +141,8 @@
         width: 100%;
         margin: auto;
         margin-top: 10px;
+    }
+    .more{
+        width: 100%;
     }
 }
