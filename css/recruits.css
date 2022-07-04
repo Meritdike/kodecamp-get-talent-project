@@ -68,19 +68,37 @@
         justify-content: center;
         text-align: center;
     }
+    .ex-hero-btn-wrap{
+        width: 90%;
+    }
     .btn2{
         margin: 20px 15px 0 0;
+        width: 100%;
     }
-    /* .btn1{  
-    } */
+    .search{ 
+        width: 100%; 
+    }
+    .job{
+        width: 90%;
+    }
     .btn1-1{
         margin-bottom: 10px;
+        width: 100%;
     }
     .section-2{
+        width: 100%;
+    }
+    .btn{
+        width: 100%;
+    }
+    .find{
         width: 50%;
     }
 }
 @media (max-width: 767px) {
+    .section-2{
+        width: 100%;
+    }
     .carrd{
         max-width: 100%;
         border: none;
@@ -93,10 +111,29 @@
         justify-content: center;
         text-align: center;
     }
+    .ex-hero-btn-wrap{
+        width: 90%;
+    }
     .btn2{
         margin: 20px 15px 0 0;
+        width: 100%;
+        margin: auto;
     }
     .btn1-1{
         margin-bottom: 10px;
+        width: 100%;
+        margin: auto;
+    }
+    .btn{
+        width: 100%;
+    }
+    .find{
+        width: 80%;
+        margin-bottom: 0%;
+    }
+    .search{
+        width: 100%;
+        margin: auto;
+        margin-top: 10px;
     }
 }
