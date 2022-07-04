@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Mobile screen */
+@media (max-width: 426px) {
+    .form-bg {
+        display: none;
+    }
+
+}
+
+/* Tablet screen */
+@media (min-width: 425px) and (max-width: 991px) {
+    .form-bg {
+        display: none;
+    }
+    
+}
+
+
+
