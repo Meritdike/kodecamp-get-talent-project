@@ -55,7 +55,7 @@
     height: inherit;
     align-content: center;
 }
-.ex-hero-btn-wrap{
+.ex-hero-btn-wrap, .sele{
     background: rgba(245, 245, 245, 1)!important;
 }
 .more{
