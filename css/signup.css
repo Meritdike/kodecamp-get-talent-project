@@ -17,6 +17,12 @@
 }
 
 /* Mobile screen */
+@media (max-width: 350px) {
+    #navtext{
+        display: none;
+    }
+
+}
 @media (max-width: 426px) {
     .form-bg {
         display: none;
@@ -25,7 +31,7 @@
 }
 
 /* Tablet screen */
-@media (min-width: 425px) and (max-width: 760px) {
+@media (min-width: 425px) and (max-width: 767px) {
     .form-bg {
         display: none;
     }
