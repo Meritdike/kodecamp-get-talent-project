@@ -1,0 +1,13 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+@media (min-width: 768px) {
+    #sign-up-wrapper {
+        width: 40% !important;
+    }
+}
+@media (max-width: 610px) {
+    #wrapper {
+        padding-left: 0 !important;
+    }
+}
