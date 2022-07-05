@@ -38,3 +38,11 @@ name.addEventListener('input', changeButtonColor);
 function changeButtonColor() {
     signUp.classList.add("button-active-color")
 }
+
+$('a[id="signup"]').click(function() {
+    if($('input[type="password"]').val().length < 8) {
+        alert('Minimum length = "eight"');
+    } else {
+        $('form').submit();
+    }
+});
