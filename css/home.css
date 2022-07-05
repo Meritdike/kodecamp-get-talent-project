@@ -40,22 +40,26 @@ body{font-family: 'Inter', sans-serif;}
 .blog-image2{background-image: url('../img/lp-coding.png'); background-size: cover; height: 50vh;}
 .blog-image3{background-image: url('../img/lp-research.png'); background-size: cover; height: 50vh;}
 .blog-image1 .read, .blog-image2 .read2, .blog-image3 .read3{bottom: 0%; position: absolute; background-color: #2B2B2B; opacity: 0.8; background-size: cover; right: 0%; left: 0%; display: none;}
-.blog-image1:hover, .blog-image2:hover, .blog-image3:hover{transform: scale(1.1) !important; transition: ease-in-out 1s;}
+.blog-image1:hover, .blog-image2:hover, .blog-image3:hover{transform: scale(1.1) !important;  transition: ease-in-out 1s;}
 @media(max-width:425px){
     .blogg{margin: 0 20px !important;}
 }
 @media (max-width: 768px){
     .companies img{width: 40%;}
     .text{padding-top: 0 !important; margin-top: 0 !important;}
-    .textt{padding-left: 20px !important; }
+    .textt{padding: 50px 0 0 20px !important; }
+    .cli-btn{margin-bottom: 0 !important;}
     .exp-btn{margin-left: 20px !important;}
-    .what-we-do{margin-bottom: 0 !important;}
+    .what-we-do{padding-bottom: 3rem !important;}
+    .what-we-do p{margin-bottom: 0 !important;}
     .what-we-do h1{padding-top: 30px !important;}
 }
 @media (max-width: 768px) and (min-width: 490px){
     .image img{padding-top: 80px !important;}
-    .hire-expert{padding: 0 !important;}
+    .imagee img{padding-top: 120px !important;}
+    .what-we-do{padding-top: 0 !important;}
     .gs-image img{margin-top: 40px !important;}
+    .hire-expert{padding-top: 0 !important;}
     .blog-image3{margin: 0 0 0 30px !important;}
 }
 
