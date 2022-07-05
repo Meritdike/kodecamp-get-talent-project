@@ -18,8 +18,8 @@
 
 /* Mobile screen */
 @media (max-width: 350px) {
-    #navtext{
-        display: none;
+    #navtext, #join{
+        font-size: 10px;
     }
 
 }
