@@ -148,6 +148,11 @@
     .card-text{
         font-size: 12px!important;
     }
+    .icon-img{
+        width: 30px;
+        height: 30px;
+
+    }
     .hero-txt{
         align-content: center;
         justify-content: center;
