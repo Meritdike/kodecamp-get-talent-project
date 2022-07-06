@@ -45,9 +45,9 @@
 
 .messenger{
     max-width: 190px; 
-  }
+}
 
-.active{
+.active-message {
   border-left: 4px solid rgba(39, 118, 234, 1)!important;
   margin-bottom: 2px !important;
 }
@@ -55,13 +55,32 @@
   cursor: pointer;
 }
 
- .bi-search:hover .input {
-   display: block !important;
+.bi-search:hover .input {
+  display: block !important;
+}
+
+.mobile-msg-input{
+  display: none !important;
+}
+
+
+.mobile-header {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .mobile-header {
+      display: block;
   }
 
-  .mobile-msg-input{
-    display: none !important;
+  .navbar-nav i {
+      display: none;
   }
+
+  .navbar-nav {
+      font-weight: bold;
+  }
+}
 
 @media (max-width: 978px){
   .sender .fs-7{
@@ -135,10 +154,6 @@
    top:20px !important;
    left: 70px !important; 
    right: 70px;
-  }
-
-  .right-mobile-header{
-    
   }
 
   .right-side-header{
