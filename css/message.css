@@ -63,6 +63,9 @@
   display: none !important;
 }
 
+.pointer {
+  cursor: pointer;
+}
 
 .mobile-header {
   display: none;
