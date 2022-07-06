@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+ <title>Messaging</title>
+ <link rel="stylesheet" href="./css/bootstrap.min.css">
+ <link rel="stylesheet" href="./css/message.css">
+</head>
+<body>
+  <header class="position-relative">
+     <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
+         <div class="container">
+            <a class="navbar-brand me-5 pe-5" aria-current="page" href="home.html"><img src="img/logged-in-header-logo.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-lg-5 ps-lg-5 mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link ms-lg-4 mobile" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link ms-lg-4" href="recruit.html">Recruits</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link ms-lg-2" href="about-us-logged-in.html">About us</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link ms-lg-2" href="contact-page-logged-in.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link ms-lg-2" href="blog-login.html">Blog</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ms-lg-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link me-lg-2 active" href="message.html">Message<i class="bi bi-chat-text-fill text-white ms-2"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link me-lg-2" href="#">Notification<i class="bi bi-bell-fill text-white ms-2"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profile<i class="bi bi-person-circle text-white ms-2"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mobile" href="sign-in.html">Logout</a>
+                </li>
+            </ul>
+            </div>
+         </div>
+     </nav>
+     <div class="mobile-message d-none text-center  position-absolute">
+        <h2 class="text-light fw-light fs-1" id="header-text">Messages</h2>
+     </div> 
+  </header>
+  <main>
+     <div class="container mt-4 ">
+          <div class="row">
+          <div class="card col-lg-4 bg-light px-0 border-0 col-md-6 rounded-top" id="inboxes">
+                <div class="left-side  px-0 card-body ">
+            <div class="left-side-header px-4 d-flex align-items-center border-bottom border-primary py-4 ">
+                 <h2 class="me-auto fw-bolder fs-2">Messaging</h2>
+                 <div class="header-icons">
+                    <i class="bi bi-three-dots-vertical me-2"></i>
+                    <i class="bi bi-pencil-square"></i>
+                 </div>
+            </div>
+            <div class="mobile d-flex  w-100 px-3 py-3 justify-content-between d-none">
+                 <a href="index.html" class="text-dark"><i class="bi bi-chevron-left"></i></a>
+                  <input type="search" name="" id="" class="ps-5 w-100 border-0 mx-3 bg-light input  rounded d-none">
+                 <i class="bi bi-search"></i>
+            </div>
+            <div class="msg-search  position-relative px-3 my-3">
+               <input type="search" placeholder="Search messages" class="ps-5 w-100 border-0 py-1 rounded">
+               <div class="search-img position-absolute top-0 ps-4 pt-1 ">
+                  <i class="bi bi-search"></i>
+               </div>
+            </div>
+
+            <div class="temidayo  active d-flex wrapper align-items-start pb-3 pt-1 px-2 justify-content-around border-primary">
+                <div class="avatar position-relative">
+                    <img class="img-fluid display-img" src="./img/temidayo.png">
+                    <img src="./img/online.png" class="position-absolute end-0 bottom-0 pb-1 online">
+                </div>
+                <div class="messenger " id="temi">
+                    <h6 class="fw-bolder messenger-name">Temidayo Oyegoke</h6>
+                    <p class="lh-1 fs-7 ">As discussed, your suggestions
+                     regarding our upcoming project...</p>
+                </div>
+                <div class="time-mark pe-1">
+                      <p class="fs-7">5:24 PM</p>
+                       <!-- <img src="./img/charm_tick-double.png" alt=""> -->
+                </div>
+            </div>
+
+            <div class="ajao d-flex wrapper align-items-start py-3 px-2 justify-content-around  border-top  border-primary">
+                <div class="avatar">
+                     <img class=" display-img img-fluid" src="./img/Ajao.png">
+                </div>
+                <div class="messenger">
+                    <h6 class="fw-bolder messenger-name">Ajao Dorcas</h6>
+                    <p class="fs-7">What pages have you designed?.</p>
+                </div>
+                <div class="time-mark ">
+                    <p class="fs-7">5:23 PM</p>
+                    <i class="bi bi-check2-all text-primary"></i>
+                </div>
+            </div>
+
+            <div class="nakupenda d-flex wrapper align-items-start py-3 px-2 justify-content-around border-top border-primary">
+                <div class="avatar position-relative">
+                     <img class=" display-img img-fluid" src="./img/nakupenda.png">
+                     <img src="./img/online.png" class="position-absolute end-0 bottom-0 pb-1 online">
+                </div>
+                <div class="messenger">
+                    <h6 class="fw-bolder messenger-name">Nakupenda Divine</h6>
+                    <p class="fs-7 lh-1">I have shared a brief with youvia your
+                      email, kindly confirm...</p>
+                </div>
+                <div class="time-mark ">
+                    <p class="fs-7">4:44 PM</p>
+                    <!-- <img src="./img/charm_tick-double.png" alt=""> -->
+                </div>
+            </div>
+
+            <div class="sarkodie d-flex wrapper align-items-start py-3 px-2 justify-content-around  border-top  border-primary">
+                  <div class="avatar position-relative">
+                      <img class=" display-img" src="./img/sarkodie.png">
+                       <img src="./img/online.png" class="position-absolute bottom-0 end-0 pb-1 online">
+                  </div>   
+                  <div class="messenger">
+                      <h6 class="fw-bolder messenger-name">Sarkodie Audu</h6>
+                      <p class="fs-7 lh-1">My team and I are hoping we can
+                       discuss further on the terms...</p>
+                  </div>
+                  <div class="time-mark">
+                      <p class="fs-7">3:34 PM</p>
+                      <i class="bi bi-check2-all text-primary"></i>
+                  </div>
+            </div>
+
+            <div class="Kobies d-flex wrapper align-items-start  py-3 px-2 justify-content-around border-top border-primary">
+               <div class="avatar">
+                    <img class=" display-img" src="./img/Kobies.png">
+               </div>
+               <div class="messenger">
+                    <h6 class="fw-bolder messenger-name">Kobies Nchanga</h6>
+                    <p class="fs-7 lh-1">Let us work on a Fintech project, the
+                     offer is huge.</p>
+                </div>
+                <div class="time-mark pe-1">
+                    <p class="fs-7">9:34 AM</p>
+                    <!-- <img src="./img/charm_tick-double.png" alt=""> -->
+                </div>
+            </div>
+
+            <div class="daramola d-flex wrapper align-items-start  py-3 px-2 justify-content-around border-top border-primary">
+                  <div class="avatar position-relative">
+                       <img class=" display-img" src="./img/daramola.png">
+                       <img src="./img/online.png" class="position-absolute bottom-0 end-0 pb-1 online">
+                  </div>  
+             
+                <div class="messenger ms-2">
+                    <h6 class="fw-bolder messenger-name">Daramola Sewa</h6>
+                    <p class="fs-7 lh-1">My team and I are hoping we can discuss... </p>
+                </div>
+                <div class="time-mark ">
+                    <p class="fs-7 yes">YESTERDAY</p>
+                    <i class="bi bi-check2-all text-primary ps-4"></i>
+                </div>
+            </div>
+
+            
+
+            <div class="letswane d-none wrapper align-items-start  py-3 px-2 justify-content-around border-top border-primary">
+                  <div class="avatar position-relative">
+                       <img class=" display-img" src="./img/letswane.png">
+                       <img src="./img/online.png" class="position-absolute bottom-0 end-0 pb-1 online">
+                  </div>  
+             
+                <div class="messenger ms-2">
+                    <h6 class="fw-bolder messenger-name">Letswane Lindiwe</h6>
+                    <p class="fs-7 lh-1">I would like to reschedule our
+                      meeting for Wednesday. </p>
+                </div>
+                <div class="time-mark ">
+                    <p class="fs-7 yes">YESTERDAY</p>
+                    <i class="bi bi-check2-all text-primary ps-4"></i>
+                </div>
+            </div>
+
+            <div class="sanni d-flex wrapper align-items-start py-3 px-2 justify-content-around border-top border-primary">
+                 <div class="avatar">
+                     <img class=" display-img" src="./img/sanni.png">
+                 </div>
+                 <div class="messenger ms-2">
+                     <h6 class="fw-bolder messenger-name ">Sanni Adejoke</h6>
+                     <p class="fs-7 lh-1">Hi Oluwafemi, I am yet to get a response
+                      from you regarding...</p>
+                </div>
+                <div class="time-mark">
+                    <p class="fs-7 yes">YESTERDAY</p>
+                    <!-- <img src="./img/charm_tick-double.png" alt=""> -->
+                </div>
+            </div>
+
+            <div class="cashion d-none wrapper align-items-start  py-3 px-2 justify-content-around border-top border-primary">
+                  <div class="avatar position-relative">
+                       <img class=" display-img" src="./img/cashion.png">
+                       <!-- <img src="./img/online.png" class="position-absolute bottom-0 end-0 pb-1 online"> -->
+                  </div>  
+             
+                <div class="messenger ms-2">
+                    <h6 class="fw-bolder messenger-name">Cashion Jean</h6>
+                    <p class="fs-7 lh-1">Hi Oluwafemi, I am yet to get a response..... </p>
+                </div>
+                <div class="time-mark ">
+                    <p class="fs-7 yes">YESTERDAY</p>
+                    <i class="bi bi-check2-all text-primary ps-4"></i>
+                </div>
+            </div>
+        </div>
+          </div>
+        
+          <div class="card chat col-lg-8 px-0 ps-1 col-md-6 mb-4 border-0 " id="chats">
+                <div class=" right-side pb-4 px-0 bg-light card-body rounded">
+                     <div class="right-side-header px-4 py-2 justify-content-between align-items-center d-flex  border-bottom border-primary">
+                        <div class="whos-online">
+                             
+                              <div class="">
+                                  
+                                  <h4 class="fs-7 fw-bolder">Temidayo Oyegoke</h4>
+                              </div>
+                              <div>
+                                  <img src="./img/online.png" class="img-fluid" width="8px">
+                                  <span class="fs-7">Available on mobile</span>
+                              </div>
+                             
+                        </div>
+                         
+                         <div class="icon">
+                            <i class="bi bi-three-dots me-2"></i>
+                            <i class="bi bi-camera-video"></i>
+                         </div>
+                     </div>
+                     <div class="right-mobile-header d-lg-none d-md-none d-flex align-items-center px-3 mx-0 mt-0 py-3 border-bottom border-primary" id="chat-mobile-header">
+                          
+                         <div>
+                          <a href=""><i class="bi bi-chevron-left "></i></a>
+                          <img src="./img/temidayo.png" alt="" class="img-fluid display-img px-2 "> 
+                         </div>
+                          <div class="me-auto">
+                                 <h4 class="fs-7 fw-bolder mb-0">Temidayo Oyegoke</h4>
+                                  <img src="./img/online.png" class="img-fluid" width="8px">
+                                  <span class="fs-7">Available </span>
+                          </div>
+                          <div class="icon">
+                            <i class="bi bi-three-dots me-2"></i>
+                            <i class="bi bi-camera-video"></i>
+                         </div>
+                     </div>
+                     <div class="messages-content">
+                         <div class="d-flex message-wrapper align-items-start mt-4 ms-4 px-3 pt-3 w-75 rounded"  style= "background-color: #fff">
+                              <div class="avatar d-sm-none d-md-none d-lg-block me-4">
+                                  <img class="display-img" src="./img/temidayo.png">
+              
+                              </div>
+                             <div class="sender ">
+                                 <h6 class="fw-bolder lh-1">Temidayo Oyegoke</h6>
+                                 <p class="fs-7 pe-5 lh-1">Will you be available to have a Video conference call with some members of the management?</p>
+                                  <p class="fs-7 text-end lh-1">5:23 PM</p>
+                             </div>
+                          </div>
+
+                          <div class="d-flex message-wrapper  align-items-start mt-4 ms-auto me-4 px-3 pt-3 w-75 rounded"  style= "background-color: #fff">
+                             <div class="sender">
+                                 <h6 class="fw-bolder text-end lh-1">Odunlami Oluwafemi</h6>
+                                 <p class="fs-7 pe-5 lh-1">Yes I would love to meet with your management team. I will be available to talk between 10am to 2pm.</p>
+                                  <p class="fs-7 ps-4 lh-1">5:23 PM</p>
+                             </div>
+                             <div class="avatar d-md-none  d-lg-block ms-4">
+                                  <img class="display-img" src="./img/odunlami.png">
+                              </div>
+                          </div>
+
+                          <div class="d-flex message-wrapper align-items-start mt-4 ms-4 px-3 pt-3 w-75 rounded"  style= "background-color: #fff">
+                              <div class="avatar d-md-none  d-lg-block me-4">
+                                  <img class="display-img" src="./img/temidayo.png">
+                              </div>
+                             <div class="sender">
+                                 <h6 class="fw-bolder lh-1">Temidayo Oyegoke</h6>
+                                 <p class="fs-7 pe-5 lh-1">Fantastic, I’ll have my assistant set up the meet for 12noon tomorrow. She will send you an email with the details.</p>
+                                  <p class="fs-7 text-end lh-1">5:24 PM</p>
+                             </div>
+                          </div>
+
+                          <div class="d-flex message-wrapper align-items-start mt-4 ms-auto me-4 px-3 pt-3 w-75 rounded"  style= "background-color: #fff">
+                             <div class="sender">
+                                 <h6 class="fw-bolder text-end lh-1">Odunlami Oluwafemi</h6>
+                                 <p class="fs-7 pe-5 lh-1">Perfect! I look forward to meeting with the management team.I will also be sharing my screen during the meet. </p>
+                                  <p class="fs-7 ps-4 lh-1">5:24 PM</p>
+                             </div>
+                             <div class="avatar d-md-none  d-lg-block ms-4">
+                                  <img class="display-img" src="./img/odunlami.png">
+                              </div>
+                          </div>
+
+                          <div class="d-flex message-wrapper align-items-start my-4 ms-4 px-3 pt-3 w-75 rounded"  style= "background-color: #fff">
+                              <div class="avatar d-md-none  d-lg-block me-4">
+                                  <img class="display-img" src="./img/temidayo.png">
+                              </div>
+                             <div class="sender">
+                                 <h6 class="fw-bolder lh-1">Temidayo Oyegoke</h6>
+                                 <p class="fs-7 pe-5 lh-1 lh-1">As discussed, your suggestions regarding our upcoming project will be
+                                   highly appreciated.</p>
+                                  <p class="fs-7 text-end">5:24 PM</p>
+                             </div>
+                          </div>
+                           <div class="message-input mx-4 mt-5 position-relative">
+                                 <input type="text" placeholder="Write a message..." class="w-100 border-0 py-1 ps-2">
+                                 <div class="message-icons position-absolute pe-4 top-0 pt-1 end-0">
+                                    <i class="bi bi-mic me-2"></i>
+                                    <i class="bi bi-emoji-smile"></i>
+                                 </div>
+                           </div>
+                           <div class="px-3  py-2 mobile-msg-input d-flex  justify-content-between" style="background-color: #4B8DEE;">
+                              <i class="bi bi-plus  rounded-circle py-1 px-2 me-2 fw-bold" style="background-color:#fff"></i>
+                              <input  class="rounded-pill border-0 ps-3 w-100 fs-6"type="search" name="" id="" placeholder="Type a message...">
+                              <img src="./img/Vector (4).png" class=" py-1 px-2 rounded-circle ms-2" style="background-color:#fff">
+                           </div>
+                         
+
+                     </div>
+                </div>
+          </div>
+        
+           </div>
+     </div>
+  </main>
+        <script src="./js/message.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
