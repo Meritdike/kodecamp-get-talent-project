@@ -47,6 +47,39 @@
     font-family: 'Calligraffitti', cursive;
 }
 
+#mobile {
+    display: none;
+}
+
+
+@media (max-width: 850px) {
+    .image-section {
+        background: none;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        margin-bottom: 0px;
+    }
+
+    .form-section {
+        width: 100%;
+        margin-bottom: 0px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    #hero-section .container {
+        padding-bottom: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    #laptop {
+        display: none;
+    }
+
+    #mobile {
+        display: block;
+    }
+}
+
 @media (max-width: 426px) {
     .success-box {
         width: 100%;
