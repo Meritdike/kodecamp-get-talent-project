@@ -1,0 +1,25 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+.icon-display {
+    visibility: visible !important;
+}
+#signin {
+    background-color: #6FA4F1;
+}
+.button-active-color {
+    background-color: #2776EA !important;
+}
+@media (max-width: 767px) {
+    .sign-in-personnel img {
+        display: none;
+    }
+    #signin {
+        font-size: 18px !important;
+    }
+}
+@media (max-width: 345px) {
+    .nav-item p, #join {
+        font-size: 11px;
+    }
+}

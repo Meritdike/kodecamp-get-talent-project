@@ -16,7 +16,7 @@
 }
 
 .btn-outline-blue {
-    width: 113px;
+    width: 118px;
     border: 2px solid #fff;
     border-radius: 8px;
     background-color: transparent;
@@ -36,4 +36,30 @@
 
 .fs-14 {
     font-size: 14px;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .btn-outline-blue {
+        border: none;
+        width: auto;
+        /* font-weight: 400 !important; */
+    }
+
+    .btn-outline-blue:hover {
+        border: none;
+        background-color: transparent;
+        color: #fff;
+    }
+
+    .navbar-nav {
+        font-weight: bold;
+    }
+
+    .mobile {
+        display: block;
+    }
 }
