@@ -15,6 +15,21 @@
     color: rgba(255,255,255,.75);
 }
 
+.btn-outline-blue {
+    width: 118px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.btn-outline-blue:hover {
+    border: 2px solid transparent;;
+    border-radius: 8px;
+    background-color: #fff;
+    color: rgba(39, 118, 234, 1);
+}
+
 .bg-footer {
     background-color: rgba(8, 24, 47, 1);
 }
@@ -28,18 +43,27 @@
 }
 
 @media (max-width: 992px) {
-    .mobile {
-        display: block;
+    .btn-outline-blue {
+        border: none;
+        width: auto;
+        /* font-weight: 400 !important; */
     }
 
-    .navbar-nav i {
-        display: none;
+    .btn-outline-blue:hover {
+        border: none;
+        background-color: transparent;
+        color: #fff;
     }
 
     .navbar-nav {
         font-weight: bold;
     }
+
+    .mobile {
+        display: block;
+    }
 }
+
 
 
 /* new css */
@@ -55,17 +79,24 @@
     height: inherit;
     align-content: center;
 }
-.ex-hero-btn-wrap, .sele{
+.ex-hero-btn-wrap{
     background: rgba(245, 245, 245, 1)!important;
 }
 .more{
     width: 50%!important;
+}
+.selet:focus-visible{
+    outline: none!important;
+}
+.select-button{
+    border:1px solid rgba(85,85,85,1)!important;
 }
 @media (max-width: 768px) {
     .carrd{
         max-width: 100%;
         border: none;
     }
+   
     .card-text{
         font-size: 12px!important;
     }
@@ -98,12 +129,17 @@
         width: 100%;
     }
     .find{
-        width: 50%;
+       width: 50%;
+
+       margin-left: 5%;
     }
 }
 @media (max-width: 767px) {
     .section-2{
         width: 100%;
+    }
+    .hero-bg{
+        background: url("../img/R-hero.img.png") no-repeat center center/cover!important;
     }
     .carrd{
         max-width: 100%;
@@ -134,8 +170,59 @@
         width: 100%;
     }
     .find{
-        width: 80%;
+        width: 50%;
         margin-bottom: 0%;
+        margin-left: 5%;
+    }
+    .search{
+        width: 100%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .more{
+        width: 100%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .section-2{
+        width: 100%;
+    }
+    .hero-bg{
+        background: url("../img/R-hero.img.png") no-repeat center center/cover!important;
+    }
+    .carrd{
+        max-width: 100%;
+        border: none;
+    }
+    .card-text{
+        font-size: 12px!important;
+    }
+    .hero-txt{
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .ex-hero-btn-wrap{
+        width: 90%;
+    }
+    .btn2{
+        margin: 20px 15px 0 0;
+        width: 100%;
+        margin: auto;
+    }
+    .btn1-1{
+        margin-bottom: 10px;
+        width: 100%;
+        margin: auto;
+    }
+    .btn{
+        width: 100%;
+    }
+    .find{
+        width: 50%;
+        margin-bottom: 0%;
+        margin-left: 5%;
     }
     .search{
         width: 100%;
