@@ -1,0 +1,13 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+@media (min-width: 540px) {
+    #google-container {
+        width: 50% !important;
+    }
+}
+@media (max-width: 425px) {
+    .sign-in-button a {
+        font-size: 13px !important;
+    }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+</head>
+
+<body>
+<!-- Header -->
+    <section id="header-section" class="mb-lg-3 mb-md-3 pb-md-2">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid px-0">
+                    <a href="index.html"><img src="img/signup_logo.png" class="img-fluid" alt="Logo"></a>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <div class="d-flex">
+                            <li class="nav-item">
+                                <p class="nav-link me-lg-2 me-md-1 me-1 mb-0" id="navtext">Already have an account?</p>
+                            </li>
+                            <a href="sign-in.html" class="text-decoration-none btn btn-outline-primary fw-bold" type="submit" id="join">Login</a>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Form -->
+    <section id="form-sign-up">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div id="form-body" class="col-lg-6 col-md-6 position-relative mb-lg-5">
+                    <div id="signup-form" class="px-lg-4 pt-lg-5 px-md-3 py-md-3 px-4 pt-5 pb-2" style="background-color: #D4E4FB; border-radius: 20px; opacity: 0.9;">
+                        <h2 class="text-center fw-bold pb-lg-3 pb-md-3 pb-2" style="color: #2B2B2B;">Let's Get You Started</h2>
+                        <form action="#">
+                            <div  id="signup-with-google" class="my-lg-2">
+                                <a href="signup_google.html" class="text-decoration-none d-block text-center border-white bg-white py-lg-3 py-2 my-4 rounded" style="border-color: #777 !important; color: #555;"><img src="img/Group.png" class="img-fluid me-2" alt="">Join with Google</a>
+                           </div>
+                            <div class="mb-3"  id="full-name">
+                                <input type="name" class="form-control border-0 py-lg-3 py-md-2" id="name" placeholder="Full Name" required style="color: #555;">
+                            </div>
+                            <div class="mb-3" id="input-email">
+                                <input type="email" class="form-control border-0 py-lg-3 py-md-2" id="email" placeholder="Email Address" required style="color: #555;">
+                            </div>
+                            <div class="mb-3 icon-wrap position-relative" id="input-password">
+                                <input type="password" class="form-control border-0 py-lg-3 py-md-2" placeholder="Password" pattern=".{8,}" id="password" required style="color: #555;">
+                                <i class="bi bi-eye-slash icon fs-5 position-absolute" style="top: 25%; right: 5%; cursor: pointer; visibility: hidden;" id="eyeicon"></i>
+                            </div>
+                            <div id="submit-btn">
+                                <a href="sign-up-success.html" id="signup" class="text-decoration-none btn btn-primary border-0 text-white py-lg-3 py-md-2 fw-bold w-100" style="font-size: 22px;">Join Now</a>
+                            </div>
+                            <div class=" mt-md-2 mb-md-2 pb-1 my-3" id="sign-up-text">
+                                <p class="" style="color: #555;">
+                                     <input type="checkbox" id="checkbox">
+                                    Yes, I would like to receive Get Talent marketing communications.<br>By signing up, you agree to our <a href="#" class="text-decoration-none">T&Cs</a> and the storing of your data as per our <a href="#" class="text-decoration-none">Privacy Statement.</a></p>
+                            </div> 
+                        </form>
+                    </div>
+                    <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+                        <div class="position-absolute rounded-circle shadow-5-strong" style="height: 100px; width:100px; bottom: -50px; left:-50px; background:#2776EA; opacity: 0.7;"></div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6">
+                    <div id="sign-up-image">
+                        <img src="img/man image 1.png" class="img-fluid form-bg mt-md-3 mt-lg-3" alt="Sign Up Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/signup.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
