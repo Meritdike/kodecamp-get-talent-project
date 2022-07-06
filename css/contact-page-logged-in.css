@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.image-section{
+    background-image: url(../img/contact-page-image.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+.form-section {
+    background-color: rgba(245, 245, 245, 1);
+}
+
+.bg-blue {
+    background-color: rgba(39, 118, 234, 1);
+    color: #fff;
+}
+
+.bg-blue:focus {
+    background-color: rgba(39, 118, 234, 0.8);
+    color: #fff;
+}
+
+.main-content {
+    height: 85vh;
+}
+
+.success-box {
+    width: 70vh;
+    border: 2px solid #3AB418;
+    border-radius: 8px;
+}
+
+.green {
+    background-color: #3AB418;
+    font-family: 'Calligraffitti', cursive;
+}
+
+#mobile {
+    display: none;
+}
+
+
+@media (max-width: 850px) {
+    .image-section {
+        background: none;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        margin-bottom: 0px;
+    }
+
+    .form-section {
+        width: 100%;
+        margin-bottom: 0px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    #hero-section .container {
+        padding-bottom: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    #laptop {
+        display: none;
+    }
+
+    #mobile {
+        display: block;
+    }
+}
+
+@media (max-width: 426px) {
+    .success-box {
+        width: 100%;
+    }
+}
