@@ -1,3 +1,5 @@
+/*Anonymous*/
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 * {
@@ -16,7 +18,7 @@
 }
 
 .btn-outline-blue {
-    width: 118px;
+    width: 113px;
     border: 2px solid #fff;
     border-radius: 8px;
     background-color: transparent;
@@ -38,35 +40,6 @@
     font-size: 14px;
 }
 
-.mobile {
-    display: none;
-}
-
-@media (max-width: 992px) {
-    .btn-outline-blue {
-        border: none;
-        width: auto;
-        /* font-weight: 400 !important; */
-    }
-
-    .btn-outline-blue:hover {
-        border: none;
-        background-color: transparent;
-        color: #fff;
-    }
-
-    .navbar-nav {
-        font-weight: bold;
-    }
-
-    .mobile {
-        display: block;
-    }
-}
-
-
-
-/* new css */
 
 .bg-primary, .btn-primary{
     background: rgba(39, 118, 234, 1)!important;
@@ -96,13 +69,14 @@
         max-width: 100%;
         border: none;
     }
+   
+    .card-text{
+        font-size: 12px!important;
+    }
     .icon-img{
         width: 40px;
         height: 40px;
 
-    }
-    .card-text{
-        font-size: 12px!important;
     }
     .hero-txt{
         align-content: center;
@@ -136,6 +110,9 @@
        width: 50%;
 
        margin-left: 5%;
+    }
+    .more{
+        width: 100%;
     }
 }
 @media (max-width: 767px) {
