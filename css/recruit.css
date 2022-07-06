@@ -64,6 +64,8 @@
     }
 }
 
+
+
 /* new css */
 
 .bg-primary, .btn-primary{
@@ -80,11 +82,21 @@
 .ex-hero-btn-wrap{
     background: rgba(245, 245, 245, 1)!important;
 }
+.more{
+    width: 50%!important;
+}
+.selet:focus-visible{
+    outline: none!important;
+}
+.select-button{
+    border:1px solid rgba(85,85,85,1)!important;
+}
 @media (max-width: 768px) {
     .carrd{
         max-width: 100%;
         border: none;
     }
+   
     .card-text{
         font-size: 12px!important;
     }
@@ -117,12 +129,17 @@
         width: 100%;
     }
     .find{
-        width: 50%;
+       width: 50%;
+
+       margin-left: 5%;
     }
 }
 @media (max-width: 767px) {
     .section-2{
         width: 100%;
+    }
+    .hero-bg{
+        background: url("../img/R-hero.img.png") no-repeat center center/cover!important;
     }
     .carrd{
         max-width: 100%;
@@ -153,12 +170,66 @@
         width: 100%;
     }
     .find{
-        width: 80%;
+        width: 50%;
         margin-bottom: 0%;
+        margin-left: 5%;
     }
     .search{
         width: 100%;
         margin: auto;
         margin-top: 10px;
+    }
+    .more{
+        width: 100%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .section-2{
+        width: 100%;
+    }
+    .hero-bg{
+        background: url("../img/R-hero.img.png") no-repeat center center/cover!important;
+    }
+    .carrd{
+        max-width: 100%;
+        border: none;
+    }
+    .card-text{
+        font-size: 12px!important;
+    }
+    .hero-txt{
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .ex-hero-btn-wrap{
+        width: 90%;
+    }
+    .btn2{
+        margin: 20px 15px 0 0;
+        width: 100%;
+        margin: auto;
+    }
+    .btn1-1{
+        margin-bottom: 10px;
+        width: 100%;
+        margin: auto;
+    }
+    .btn{
+        width: 100%;
+    }
+    .find{
+        width: 50%;
+        margin-bottom: 0%;
+        margin-left: 5%;
+    }
+    .search{
+        width: 100%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .more{
+        width: 100%;
     }
 }
