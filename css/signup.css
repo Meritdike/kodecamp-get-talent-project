@@ -28,8 +28,7 @@
         display: none;
     }
      #bottom-text{
-        text-align: end;
-        margin-right: 4px;
+        font-size: 10px;
     }
 
 }
