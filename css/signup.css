@@ -27,6 +27,10 @@
     .form-bg {
         display: none;
     }
+     #bottom-text{
+        text-align: end;
+        margin-right: 4px;
+    }
 
 }
 
