@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/recruit.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/header-footer-logged-in.css">
+    <title>Recruit-Ex</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
+        <div class="container">
+          <a class="navbar-brand me-5 pe-5 active" aria-current="page" href="home.html"><img src="img/logged-in-header-logo.png" alt="Logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-lg-5 ps-lg-5 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link ms-lg-4 mobile" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ms-lg-4  active"  aria-current="page" href="recruit.html">Recruits</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ms-lg-2" href="about-us-logged-in.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ms-lg-2" href="contact-page-logged-in.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ms-lg-2" href="blog-login.html">Blog</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-lg-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link me-lg-2" href="message.html">Message<i class="bi bi-chat-text-fill text-white ms-2"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-lg-2" href="#">Notification<i class="bi bi-bell-fill text-white ms-2"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Profile<i class="bi bi-person-circle text-white ms-2"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mobile" href="sign-in.html">Logout</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+
+    <section>
+        
+      <div class=" mb-"2>
+          <div class="container w-100 hero-txt text-white align-center pt-5">
+             
+              <div class="py-5">
+                <div class="text-start"><button type="button" class="btn find btn-primary btn-sm">Find a candidate</button></div>
+                <div class="ex-hero-btn-wrap mb-5 mx-auto d-lg-flex d-md-block d-sm-block justify-content-between mt-2 bg-white p-3">
+                    <div class="btn1 col-lg-8 col-12 justify-content-between d-lg-flex">
+                      <div class="d-lg-none d-md-block d-sm-block text-black text-start fw-bold mt-2">Choose a career</div>
+                      <div class="dropdown btn1-1">
+                        <button class="btn btn-white selet bg-white select-button" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-expanded="false">
+                        <div class="d-flex bg-white">
+                          <img src="img/R-icon1.png"class="pe-2">
+                        <select class="selet border-0 fs-lg-3 bg-white fs-md-4 w-100 fs-sm-5">
+                          <option class="">Career</option>
+                          <option value="" class="">Product design</option>
+                          <option value="" class="">Frontend developer</option>
+                          <li><hr class="dropdown-divider"></li>
+                          <option value=""class="">Backend developer</option>
+                          <li><hr class="dropdown-divider"></li>
+                          <option value=""class="">Full stack</option>
+                          <li><hr class="dropdown-divider"></li>
+                          <option value=""class="">Mobile developer</option>
+                          <li><hr class="dropdown-divider"></li>
+                          <option value=""class="">Web developer</option>
+                          <li><hr class="dropdown-divider"></li>
+                          <option value=""class="">CAD</option>
+                          <li><hr class="dropdown-divider"></li>
+                          <option value=""class="">Data science</option>
+                          <li><hr class="dropdown-divider"></li>
+                          <option value=""class="">Product MGT</option>
+                          <li><hr class="dropdown-divider"></li>
+                          <option value=""class="">Machine language</option>
+                        </select>
+                        </div>
+                        </button>
+                        
+                    </div>
+                    
+                    <div class="btn1-1"><div>
+                      <div class="d-lg-none d-md-block d-sm-block text-black text-start fw-bold mt-2">Job type</div>
+                      <button class="btn job bg-white selet btn-white select-button" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-expanded="false">
+                        <div class="d-flex bg-white">
+                        <img src="img/R-icon2.png"class="pe-2">
+                        <select class="selet border-0 w-100 bg-white">
+                          <option class="sele">Job type</option>
+                          <option>Any</option>
+                          <option value=""class="sele">Part-time</option>
+                          <option value=""class="sele">Full-time</option>
+                          <li><hr class="dropdown-divider"></li>
+                          <option value=""class="sele">Remote</option>
+                          <li><hr class="dropdown-divider"></li>
+                          <option value=""class="sele">Internship </option>
+                          <li><hr class="dropdown-divider"></li>
+                          <option value=""class="sele">Temporary</option>
+                          <option value=""class="sele">******************</option>
+                        </select>
+                        </div>
+                        </button>
+                        </div>
+                       
+                    </div>
+  
+                    <div class="btn1-1 dropdown col-4">
+                      <div class="d-lg-none d-md-block d-sm-block text-black text-start fw-bold mt-2">Location</div>
+                      <button class="btn btn-white selet bg-white select-button" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-expanded="false">
+                        <div class="d-flex bg-white">
+                        <img src="./img/R-icon3.png"class="pe-2">
+                        <select class="selet w-100 border-0 bg-white">
+                          <option class="">Location</option>
+                          <option value=""class="sele">Nigeria</option>
+                          <option value=""class="sele">Ghana</option>
+                          <li><hr class="dropdown-divider"></li>
+                          <option value=""class="sele">South Africa</option>
+                          <li><hr class="dropdown-divider"></li>
+                          <option value=""class="sele">United kigdom</option>
+                          <li><hr class="dropdown-divider"></li>
+                          <option value=""class="sele">Antigua and Barbusa</option>
+                          <li><hr class="dropdown-divider"></li>
+                          <option value=""class="sele">Argentina</option>
+                          <li><hr class="dropdown-divider"></li>
+                          <option value=""class="sele">Armenia</option>
+                          <li><hr class="dropdown-divider"></li>
+                          <option value=""class="sele">Australia</option>
+                          <li><hr class="dropdown-divider"></li>
+                          <option value=""class="sele">Austria</option>
+                        </select>
+                       
+                        </div>
+                        </button>
+                        
+                    </div>
+  
+                    </div>
+  
+                    <div class="btn2 col-lg-4 d-md-12 d-sm-12">
+                  <div class=" float-lg-end float-md-none float-sm-none">
+                    <a href="recruit-ex.html"><button class="btn search btn-primary border-0 px-5 " type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-expanded="false">
+                      Search
+                    </button></a>
+                  </div>
+                  </div>
+                  
+                
+  
+               
+            </div>
+            </div>  
+        </div>
+  </section>
+
+
+<!---END HERO SECTION-->
+
+<section>
+  <div class="sec3 container mt-5 d-flex">
+    <img src="./img/R-vr.png" class="ps-2 pe-3"><h3 class="fw-bold fs-2">Product Designers</h3>
+</div>
+<div class=" container mt-5 d-lg-flex mx-auto sec3-row1 row ">
+    <div class="col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+    <div class="carrd mx-auto mb-3" style="width: 15rem;">
+        <img src="img/ex-img1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Adebambo Jadesola</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">1</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UI/UX</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Lagos, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+      <div class="carrd mx-auto mb-3 " style="width: 15rem;">
+        <img src="./img/ex-img2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Odunlami Oluwafemi</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">1</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UI/UX</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Lagos, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="recruit-info.html" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+
+      
+
+      <div class="col-lg-4 col-md-6 mx-md-auto col-sm-12 mx-sm-auto">
+      <div class="carrd mx-auto mb-3" style="width: 15rem;">
+        <img src="./img/ex-img3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Musa Amoda</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">2</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UX</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Oshobgo, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+<!---Another section-->
+    
+    <div class="col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+    <div class="carrd mx-auto mb-3" style="width: 15rem;">
+        <img src="./img/ex-img4.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Mundung Weng</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">1</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UI/UX</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Jalingo, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+  
+
+    
+      <div class="col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+      <div class="carrd mx-auto mb-3 " style="width: 15rem;">
+        <img src="./img/ex-img5.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Obi Chimeze</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">2</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UI</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Owerri, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mx-md-auto col-sm-12 mx-sm-auto">
+      <div class="carrd mx-auto mb-3" style="width: 15rem;">
+        <img src="./img/ex-img6.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Aishat Muibudeen</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">1</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UI/UX</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Ibadan, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+
+<!---Another section-->
+
+
+
+    <div class="col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+    <div class="carrd mx-auto mb-3" style="width: 15rem;">
+        <img src="./img/ex-img7.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Daramola Adesewa</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">1</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UI/UX</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Abuja, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+      <div class="carrd mx-auto mb-3 " style="width: 15rem;">
+        <img src="./img/ex-img8.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Isreal Clement</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">1</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UI/UX</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Lagos, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+      
+
+
+
+      <div class="col-lg-4 col-md-6 col-sm-12 mx-md-auto mx-sm-auto">
+      <div class="carrd mx-auto mb-3" style="width: 15rem;">
+        <img src="./img/ex-img9.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Bakare Shakiroh</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">1</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UI/UX</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Abuja, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+
+<!---Another section-->
+
+    
+    <div class="col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+    <div class="carrd mx-auto mb-3" style="width: 15rem;">
+        <img src="./img/ex-img10.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Bakare Shakiroh</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">1</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UI/UX</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Abuja, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+      
+
+      
+      
+      <div class="col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+      <div class="carrd mx-auto mb-3 " style="width: 15rem;">
+        <img src="img/ex-img11.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Adewole Michael</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">1</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UI/UX</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Lagos, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 mx-md-auto mx-sm-auto">
+      <div class="carrd mx-auto mb-3" style="width: 15rem;">
+        <img src="./img/ex-img12.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Adewole Michael</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">1</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UI/UX HTML& CSS</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Benin-city, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+
+<!---Another section-->
+
+
+
+
+    <div class="col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+    <div class="carrd mx-auto mb-3" style="width: 15rem;">
+        <img src="./img/ex-img13.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Garba Abigail</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">2</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UI/UX</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Auchi, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+      <div class="carrd mx-auto mb-3 " style="width: 15rem;">
+        <img src="./img/ex-img14.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Egbe Ethan</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">1</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UI/UX</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Lagos, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+  
+
+
+    
+      <div class="col-lg-4 col-md-6 col-sm-12 mx-md-auto mx-sm-auto">
+      <div class="carrd mx-auto mb-3" style="width: 15rem;">
+        <img src="./img/ex-img15.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Soronnadi Lois</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">1</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UI/UX</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Asaba, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+
+<!---Another section-->
+
+
+    
+    <div class="col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+    <div class="carrd mx-auto mb-3" style="width: 15rem;">
+        <img src="img/ex-img16.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Onoja Daniel</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">3</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">ux</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Lokoja, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+      
+
+      <div class="col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+      <div class="carrd mx-auto mb-3 " style="width: 15rem;">
+        <img src="./img/ex-img17.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Amadi Augustina</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">2</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UI/UX</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Aba, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 mx-md-auto mx-sm-auto">
+      <div class="carrd mx-auto mb-3" style="width: 15rem;">
+        <img src="./img/ex-img18.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Abubakar Mistura</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">3</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UI/UX, HTML, CSS</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Kano, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+
+
+<!---Another section-->
+
+
+
+    <div class="col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+    <div class="carrd mx-auto mb-3" style="width: 15rem;">
+        <img src="./img/ex-img19.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Ayodele Rafael</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">2</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UI</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Akure, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+      <div class="carrd mx-auto mb-3 " style="width: 15rem;">
+        <img src="./img/ex-img20.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Atinyoh Imokha</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">1</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UX</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Lafia, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+
+
+      
+      <div class="col-lg-4 col-md-6 col-sm-12 mx-md-auto mx-sm-auto">
+      <div class="carrd mx-auto mb-3" style="width: 15rem;">
+        <img src="./img/ex-img21.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Charles Imoh</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">2</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UI/UX</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Makurdi, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+
+<!---Another section-->
+
+
+    
+    <div class="col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+    <div class="carrd mx-auto mb-3" style="width: 15rem;">
+        <img src="./img/ex-img22.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Park Lu Chen</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">3</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UI/UX, JS</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Lagos, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+  
+
+      
+      <div class="col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+      <div class="carrd mx-auto mb-3 " style="width: 15rem;">
+        <img src="./img/ex-img23.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Idris Matilda</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">2</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UI/UX</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Abeokuta, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 mx-md-auto mx-sm-auto">
+      <div class="carrd mx-auto mb-3" style="width: 15rem;">
+        <img src="./img/ex-img24.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Coker Thompson</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">3</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UI/UX</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Lagos, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+  
+
+<!---Another section-->
+
+
+
+    
+    <div class="col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+    <div class="carrd mx-auto mb-3" style="width: 15rem;">
+        <img src="./img/ex-img25.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Okonkwo Kenneth</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">2</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UI/UX</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Uyo, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+      <div class="carrd mx-auto mb-3 " style="width: 15rem;">
+        <img src="./img/ex-img26.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Bayero Funmilola</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">2</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UI/UX</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Sokoto, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+      
+
+
+      <div class="col-lg-4 col-md-6 col-sm-12 mx-md-auto mx-sm-auto">
+      <div class="carrd mx-auto mb-3" style="width: 15rem;">
+        <img src="./img/ex-img27.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Adeleke Oyindamola</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">1</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UI/UX</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Lagos, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+
+<!---Another section-->
+
+
+    
+    <div class="col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+    <div class="carrd mx-auto mb-3" style="width: 15rem;">
+        <img src="./img/ex-img28.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Shuaib Adebimpe</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">3</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">ui</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Ilorin, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+
+
+      
+      <div class="col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+      <div class="carrd mx-auto mb-3 " style="width: 15rem;">
+        <img src="./img/ex-img29.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Abdullahi Danladi</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">3</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UI/UX</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Zaria, Kaduna</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 mx-md-auto mx-sm-auto">
+      <div class="carrd mx-auto mb-3" style="width: 15rem;">
+        <img src="./img/ex-img30.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><span class="fw-bold">NAME: </span><span class="text-primary">Moses Trabaye</span></p>
+          <p class="card-text"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span class="text-primary">2</span></p>
+          <p class="card-text"><span class="fw-bold">STRENGHT: </span><span class="text-primary">UI/UX, PHP</span></p>
+          <p class="card-text"><span class="fw-bold">Location: </span><span class="text-primary">Ijebu-ode, Nigeria</span></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="" viewBox="0 0 16 16">
+                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+              </svg>
+              <span class="ps-2">(11)</span>
+          </p>
+          <a href="#" class="btn btn-primary px-5">View</a>
+        </div>
+      </div>
+    </div>
+</div>
+<!---Another section-->
+
+</section>
+<section class="mt-5 pt-5">
+<div class="more mx-auto mb-5 text-center align-center">
+  <a href="#">
+<button class="btn btn-outline-primary border-primary px-5">See more</button></a>
+</div>
+</section>
+
+<!---footer-->
+
+
+
+<footer class="bg-footer">
+  <div class="container py-5">
+      <div class="row py-2">
+          <div class="col-lg-8 col-md-8 col-12">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 col-12">
+                      <p class="fw-bold text-light mobile">Quick Links</p>
+                      <ul class="list-unstyled fw-bold">
+                          <li class="mb-4">
+                              <a class="text-decoration-none link-secondary" href="home.html">Home</a>
+                          </li>
+                          <li class="mb-4">
+                              <a class="text-decoration-none link-secondary" href="#">Profile</a>
+                          </li>
+                          <li class="mb-4">
+                              <a class="text-decoration-none link-secondary" href="about-us-logged-in.html">About Us</a>
+                          </li>
+                          <li class="mb-4">
+                              <a class="text-decoration-none link-secondary" href="blog-login.html">Blog</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-12">
+                      <p class="fw-bold text-light">Policies</p>
+                          <ul class="list-unstyled fs-14">
+                              <li class="pb-2">
+                                  <a class="text-decoration-none link-secondary" href="#">Terms of service</a>
+                              </li>
+                              <li class="pb-2">
+                                  <a class="text-decoration-none link-secondary" href="#">Privacy policy</a>
+                              </li>
+                              <li class="pb-2">
+                                  <a class="text-decoration-none link-secondary" href="#">Recruitment terms</a>
+                              </li>
+                          </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+              <p class="fw-bold text-light">CONTACT US</p>
+              <ul class="list-unstyled fs-14">
+                  <li>
+                      <div class="d-flex text-secondary">
+                          <i class="bi bi-geo-alt-fill me-4"></i>
+                          <p>38, Afaha Uqua Road, Eket, Akwa-Ibom State</p>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="d-flex text-secondary">
+                          <i class="bi bi-telephone-fill me-4"></i>
+                          <p>+234|812-8555-785</p>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="d-flex text-secondary">
+                          <i class="bi bi-envelope-fill me-4"></i>
+                          <p>kodecamp@gottalent.com</p>
+                      </div>
+                  </li>
+              </ul>
+              <div class="d-flex">
+                  <p class="fw-bold text-light me-4">Follow us</p>
+                  <a href="#" class="me-3 text-decoration-none link-light"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="me-3 text-decoration-none link-light"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="me-3 text-decoration-none link-light"><i class="bi bi-instagram"></i></a>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
