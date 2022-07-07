@@ -1,0 +1,517 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.blog-hero-section{
+  background-image: url(../img/Group314.png);
+  background-repeat: no-repeat;
+  background-position: center 5%;
+  background-size: cover;
+}
+
+#Latest-Update .container .flex .image-section{
+  width: 100%;
+}
+
+#Latest-Update .container .flex .text-section{
+  width: 70%;
+}
+
+ul{
+  list-style: none;
+}
+
+.rounded-bottom {
+border-radius: 0px 0px 15px 15px !important;
+}
+.topnav input[type=text] {
+  padding: 6px;
+  font-size: 13px;
+  border: none;
+  margin-right: 10px;
+  background-color: #D4E4FB;
+  width: 308px;
+  height: 40px;
+  border-left: 5px solid blue;
+  border-radius: 5px;
+}
+
+.topnav .search-container button {
+  background: #2776EA;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 6px;
+}
+
+
+.swiper {
+display: none;
+}
+.topnav .search-container button:hover {
+  background: #2776ea57;
+}
+
+
+#Latest-Update .topnav-main {
+  display: block;
+}
+
+.topnav-main input[type=text] {
+  padding: 6px;
+  font-size: 13px;
+  border: none;
+  margin-right: 10px;
+  background-color: #D4E4FB;
+  width: 308px;
+  height: 40px;
+  border-left: 5px solid blue;
+  border-radius: 5px;
+}
+
+.topnav-main .search-container button {
+  background: #2776EA;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 6px;
+}
+
+.topnav-main .search-container button:hover {
+  background: #2776ea57;
+}
+
+.topnav-main {
+  display: none;
+}
+
+.card {
+  border: 0;
+}
+
+#Recommended-post .card-img-top {
+  border: 0;
+}
+
+#Recommended-post .card {
+  border: 1px solid #D4E4FB;
+  border-radius: 20px;
+}
+
+#Recommended-post .Recommended-Post-Body {
+  margin-top: 30px;
+}
+#Recommended-post .card-title {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+#Recommended-post {
+  background: #D4E4FB;
+}
+
+#Recommended-post .card .card-body .text-grey{
+  color: #7c7c7c;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+#Recommended-post .card .card-body .link a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+#Recommended-post{
+  padding: 30px;
+}
+
+
+
+
+
+
+
+
+#Recommended-post2 .card-img-top {
+  border: 0;
+}
+
+#Recommended-post2 .card {
+  border: 1px solid #D4E4FB;
+  border-radius: 20px;
+}
+
+#Recommended-post2 .Recommended-Post-Body {
+  margin-top: 30px;
+}
+#Recommended-post2 .card-title {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+#Recommended-post2 {
+  background: #D4E4FB;
+}
+
+#Recommended-post2 .card .card-body .text-grey{
+  color: #7c7c7c;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+#Recommended-post2 .card .card-body .link a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+#Recommended-post2{
+  padding: 30px;
+}
+
+#Recommended-post2{
+  display: none;
+}
+
+
+
+
+
+
+#cardss .card .card-body {
+  background: #D4D4D4;
+  border-radius: 0px 0px 10px 10px;
+}
+
+#cardss .card .card-body .text-grey{
+  color: #7c7c7c;
+  font-weight: 700;
+  font-size: 16px;
+}
+#cardss .card .card-body .link a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* #cardss{
+  padding: 30px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+#cardss-two .card .card-body {
+  background: #D4D4D4;
+  border-radius: 0px 0px 10px 10px;
+}
+
+#cardss-two .card .card-body .text-grey{
+  color: #7c7c7c;
+  font-weight: 700;
+  font-size: 16px;
+}
+#cardss-two .card .card-body .link a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* #cardss-two{
+  padding: 30px;
+} */
+
+#cardss-two .card-title {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#card-five {
+  padding: 30px;
+}
+#card-fives {
+  display: none;
+}
+#card-fives {
+  padding: 30px;
+}
+
+#cardss .card-title {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+
+
+#card-five .cardes .card-bodys {
+  background: #D4D4D4;
+  border-radius: 0px 0px 10px 10px;
+}
+
+#cards-five .cardes .card-bodys .link a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  float: right;
+}
+
+#Latest-Update .link a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+#Latest-Update .Latest-Update-Body .Latest-Update-Text {
+  display: flex;
+}
+
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+#Recommended-post2 .swiper-slide {
+  font-size: 18px;
+  background: #D4E4FB;
+}
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+@media (max-width: 426px) {
+  .blog-hero-section {
+    width: 100%;
+  }
+
+  #cardss {
+    display: none;
+    padding: 30px;
+  }
+
+  #card-fives {
+    display: block;
+  }
+
+  #card-five {
+    display: none;
+  }
+
+  .swiper {
+    display: block;
+  }
+
+  .topnav-main {
+    display: block;
+  }
+
+  #Recommended-post{
+    display: none;
+  }
+
+  #Recommended-post2{
+    display: block;
+  }
+  /* #Latest-Update {
+    width: 350px;
+    padding: 10px;
+  } */
+
+  .col-12 {
+    margin-bottom: 20px;
+    margin-right: 0!important;
+  }
+  #blog-women {
+    padding: 10px;
+  }
+
+  #women-text {
+    padding: 10px;
+  }
+
+  #Latest-Update .link {
+  text-align: center;
+  }
+
+  #Latest-Update .search2 {
+    display: none;
+  }
+
+  #Latest-Update .topnav {
+    width: 200px;
+  }
+
+  #Latest-Update .topnav .search-container {
+    width: 100%;
+  }
+
+  #Latest-Update .topnav-main input[type=text] {
+    width: 67%;
+    font-size: 10px;
+    height: 35px;
+    margin: 0;
+}
+
+  #Latest-Update .topnav input[type=text] {
+      width: 67%;
+      font-size: 10px;
+      height: 35px;
+      margin: 0;
+  }
+ 
+ .blog-hero-section .topnav-main input[type=text] {
+    width: 213px;
+}
+
+  .topnav input[type=text] {
+    width: 65%;
+  }
+
+
+  .center {
+    padding: 0 !important;
+}
+
+#Recommended-post .Recommended-Post-Body {
+  padding-left: 0;
+}
+
+#Recommended-post2 .Recommended-Post-Body {
+  padding-left: 0;
+}
+
+#Latest-Update .Latest-Update-Body .Latest-Update-Text h2{
+    height: 50%;
+  }
+
+  #Latest-Update .topnav-main .search-container {
+  width: 200px;
+  }
+
+  #Latest-Update .Latest-Update-Body {
+    padding-left: 0;
+    width: 200px;
+    margin-bottom: 0;
+  }
+  #Latest-Update .Latest-Update-Body .Latest-Update-Text h2{
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: 700;
+  }
+
+  #Recommended-post .Recommended-Post-Body .Recommended-Post-Text h2{
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  #Recommended-post2 .Recommended-Post-Body .Recommended-Post-Text h2{
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  #card-five h2{
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  #card-fives h2{
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  #cardss-two {
+   padding: 30px;
+}
+
+.topnav-main input[type=text] {
+margin-right: 10px;
+}
+}
+
+@media (max-width: 320px){
+.blog-hero-section .topnav-main input[type=text] {
+    width: 155px;
+}
+}
+
+@media (max-width: 769px) {
+
+  .topnav-main input[type=text] {
+    width: 210px;
+}
+
+.container, .container-md, .container-sm {
+  max-width: 100%;
+}
+
+.third-card {
+  margin-top: 20px;
+}
+}
