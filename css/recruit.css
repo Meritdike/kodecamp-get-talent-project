@@ -47,6 +47,11 @@
 
 /* new css */
 
+.icon-img{
+    width: 70px;
+    height: 70px;
+}
+
 .bg-primary, .btn-primary{
     background: rgba(39, 118, 234, 1)!important;
 
@@ -80,9 +85,8 @@
         font-size: 12px!important;
     }
     .icon-img{
-        width: 40px;
-        height: 40px;
-
+        width: 50px;
+        height: 50px;
     }
     .hero-txt{
         align-content: center;
