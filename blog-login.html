@@ -1,752 +1,562 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog</title>
-  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="css/blog.css">
-  <link rel="stylesheet" href="css/header-footer-anonymous-user.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-<!-- Link Swiper's CSS -->
-<link
-rel="stylesheet"
-href="https://unpkg.com/swiper/swiper-bundle.min.css"
-/>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/header-footer-anonymous-user.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
 
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
-        <div class="container">
-          <a class="navbar-brand me-5 pe-5" href="home.html"><img src="img/logged-in-header-logo.png" alt="Logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-lg-5 ps-lg-5 mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link ms-lg-4" href="recruit.html">Recruits</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link ms-lg-2" href="about-us-logged-in.html">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link ms-lg-2" href="contact-page-logged-in.html">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link ms-lg-2 active" aria-current="page" href="#">Blog</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav ms-lg-auto mb-2 mb-lg-0">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
+          <div class="container">
+            <a class="navbar-brand me-5 pe-5" href="home.html"><img src="img/logged-in-header-logo.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-lg-5 ps-lg-5 mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link me-lg-2" href="message.html">Message<i class="bi bi-chat-text-fill text-white ms-2"></i></a>
+                  <a class="nav-link ms-lg-4 mobile" href="home.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-lg-2" href="#">Notification<i class="bi bi-bell-fill text-white ms-2"></i></a>
+                  <a class="nav-link ms-lg-4" href="recruit.html">Recruits</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Profile<i class="bi bi-person-circle text-white ms-2"></i></a>
+                  <a class="nav-link ms-lg-2" href="home.html" href="about-us-logged-in.html">About us</a>
                 </li>
-            </ul>
+                <li class="nav-item">
+                  <a class="nav-link ms-lg-2" href="contact-page-logged.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-lg-2 active" aria-current="page" href="blog-login.html">Blog</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ms-lg-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link me-lg-2" href="message.html">Message<i class="bi bi-chat-text-fill text-white ms-2"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-lg-2" href="#">Notification<i class="bi bi-bell-fill text-white ms-2"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Profile<i class="bi bi-person-circle text-white ms-2"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mobile" href="sign-in.html">Logout</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <section id="hero-section">
+      <div class="image-section">
+        <h2 class="fw-bold display-5 text-white d-flex justify-content-center align-items-center" style="height: 50vh;">Our Blog</h2>
+      </div>
+    </section>
+    <section id="latest-updates">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-lg-6 col-md-6 col-12">
+            <h2 class="header-border fw-bold display-6 ps-3">Latest Updates</h2>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <form class="d-flex">
+              <input class="form-control me-2 bg-light-blue input-border shadow-none" type="search" placeholder="Steps in the design Industry" aria-label="Search">
+              <button class="btn bg-blue" type="submit"><i class="bi bi-search text-light"></i></button>
+            </form>
           </div>
         </div>
-      </nav>
-</header>
-
-
-<section class="blog-hero-section p-5">
-  <div class="row">
-    <div class="col-12">
-      <div class="blog-hero-text">
-        <h1 class="blog-text-main text-light p-5 text-center">
-            Our Blog
-        </h1>
-    </div>
-    </div>
-  </div>  
-  <div class="topnav-main mb-5">
-    <div class="search-container text-center">
-        <form action="/action_page.php">
-          <input type="text" placeholder="Search blog..." name="search">
-          <button type="submit" class="float-end pb-3 ps-2 pe-2 me-3"><i class="fa fa-search"></i></button>
-        </form>
-      </div>
-      </div>
-</section>
-
-
-<section id="Latest-Update">
-  <div class="container">
-      <div class="row p-5">
-          <div class="col">
-            <ul class="Latest-Update-Body">
-
-              <li class="Latest-Update-Text">
-                  <div class="image-section flex">
-                    <img src="img/Line.png" alt="centered line">
-                  </div>
-                  <div>
-                    <h2> &nbsp; Latest Updates</h2>
-                  </div>
-              </li>
-
-            </ul>
-          </div>
-          <div class="col">
-            <div class="search2">
-              <div class="topnav-main">
-              <div class="search-container float-end">
-                  <form action="/action_page.php">
-                    <input type="text" placeholder="Search blog..." name="search">
-                    <button type="submit" class="float-end pb-3 ps-2 pe-2 me-3"><i class="fa fa-search"></i></button>
-                  </form>
-                </div>
-                </div>
-                </div>
-          </div>
-        </div>
-  </div>
-</section>
-
-
-<section id="cardss">
-  <div class="container">
-      <div class="row mb-5">
-        <div class="col-lg-4 col-md-6 col-12 mb-4">
-          <div class="card">
-              <img src="./img/Blog306.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                  <p class="text-grey">22-06-2022 &nbsp; | &nbsp; Anthony John</p>
-                <h5 class="card-title text-primary font-weight-bolder">Business</h5>
-                <h4 class="card-title">Retracing Our Steps in the Design Industry</h4>
+        <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-between laptop-view">
+          <div class="col-lg-4" style="width: 30%;">
+            <div class="card border-0 my-4">
+              <img src="img/blog-business.png" class="card-img-top" alt="Girl with a desktop">
+              <div class="card-body bg-grey">
+                <p class="text-secondary fw-bold mb-1">22-06-2022<span class="border-start border-3 border-secondary ms-2 ps-2">Anthony John</span></p>
+                <a href="blog-readpage.html" class="text-decoration-none link-primary fw-bold fs-18">Business</a>
+                <h6 class="card-title fw-bold pt-2">Retracing Our Steps in the Design Industry</h6>
                 <p class="card-text">Our mission is to admit, nuture and deploy next generation...</p>
-                <div class="link">
-                <a href="#" class="text-primary float-end">Read</a>
+                <div class="text-end mb-2">
+                  <a href="blog-readpage.html" class="text-decoration-none link-primary fw-bold">Read</a>
                 </div>
-                <!-- <a href="#" class="btn btn-primary">Read</a> -->
               </div>
             </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-12 mb-4">
-          <div class="card">
-              <img src="./img/Blog286.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                  <p class="text-grey">22-06-2022 &nbsp; | &nbsp; Ikechukwu Emmanuel</p>
-                <h5 class="card-title text-primary font-weight-bolder">Design</h5>
-                <h4 class="card-title">Importance of Learning Designs and New Design Concepts</h4>
+          </div>
+          <div class="col-lg-4" style="width: 30%;">
+            <div class="card border-0 my-4">
+              <img src="img/blog-design.png" class="card-img-top" alt="Colorful cards">
+              <div class="card-body bg-grey">
+                <p class="text-secondary fw-bold mb-1">21-06-2022<span class="border-start border-3 border-secondary ms-2 ps-2">Ikechukwu Emmanuel</span></p>
+                <a href="#" class="text-decoration-none link-primary fw-bold fs-18">Design</a>
+                <h6 class="card-title fw-bold pt-2">Importance of Learning Designs and New Design Concepts</h6>
                 <p class="card-text">Kick-start Your Career in UI/UX Design In a Fast Growing Tech Company...</p>
-                <div class="link">
-                <a href="#" class="text-primary float-end">Read</a>
+                <div class="text-end mb-2">
+                  <a href="#" class="text-decoration-none link-primary fw-bold">Read</a>
                 </div>
-                <!-- <a href="#" class="btn btn-primary">Read</a> -->
               </div>
             </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-12 mb-4 third-card">
-          <div class="card">
-              <img src="./img/Blog285.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                  <p class="text-grey">22-06-2022 &nbsp; | &nbsp; Yewande Adebola</p>
-                <h5 class="card-title text-primary font-weight-bolder">Back-End Development</h5>
-                <h4 class="card-title"> Knowledge of Popular Frameworks as a Back-End Developer</h4>
+          </div>
+          <div class="col-lg-4" style="width: 30%;">
+            <div class="card border-0 my-4">
+              <img src="img/blog-backend.png" class="card-img-top" alt="Laptop with codes">
+              <div class="card-body bg-grey">
+                <p class="text-secondary fw-bold mb-1">16-06-2022<span class="border-start border-3 border-secondary ms-2 ps-2">Yewande Adebola</span></p>
+                <a href="#" class="text-decoration-none link-primary fw-bold fs-18">Back-End Development</a>
+                <h6 class="card-title fw-bold pt-2">Knowledge of Popular Frameworks as a Back-End Developer</h6>
                 <p class="card-text">Data structures are popular frameworks that are essential for...</p>
-                <div class="link">
-                <a href="#" class="text-primary float-end">Read</a>
+                <div class="text-end mb-2">
+                  <a href="#" class="text-decoration-none link-primary fw-bold">Read</a>
                 </div>
-                <!-- <a href="#" class="btn btn-primary">Read</a> -->
               </div>
             </div>
-        </div>
-
-
-        <div class="col-lg-4 col-md-6 col-12 mb-4 mt-3">
-          <div class="card">
-              <img src="./img/Blog299.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                  <p class="text-grey">22-06-2022 &nbsp; | &nbsp; Tracy Edwards</p>
-                <h5 class="card-title text-primary">Computer Aided Design (CAD)</h5>
-                <h4 class="card-title">Engineering Sketch Generation For Computer Aided Designs</h4>
+          </div>
+          <div class="col-lg-4" style="width: 30%;">
+            <div class="card border-0 my-4">
+              <img src="img/blog-cad.png" class="card-img-top" alt="CAD Picture">
+              <div class="card-body bg-grey">
+                <p class="text-secondary fw-bold mb-1">28-06-2022<span class="border-start border-3 border-secondary ms-2 ps-2">Tracy Edwards</span></p>
+                <a href="#" class="text-decoration-none link-primary fw-bold fs-18">Computer Aided Design (CAD)</a>
+                <h6 class="card-title fw-bold pt-2">Engineering Sketch Generation For Computer Aided Designs</h6>
                 <p class="card-text">Engineering sketches form the 2D basis of parametric...</p>
-                <div class="link">
-                <a href="#" class="text-primary float-end">Read</a>
+                <div class="text-end mb-2">
+                  <a href="#" class="text-decoration-none link-primary fw-bold">Read</a>
                 </div>
-                <!-- <a href="#" class="btn btn-primary">Read</a> -->
               </div>
             </div>
-  </div>
-  <div class="col-lg-4 col-md-6 col-12 mt-3">
-          <div class="card">
-              <img src="./img/Blog298.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                  <p class="text-grey">22-06-2022 &nbsp; | &nbsp; Babatunde Badmus</p>
-                <h5 class="card-title text-primary">Front-End  Development</h5>
-                <h4 class="card-title">Understanding Why JavaScript Should be Used in Custom Apps. </h4>
+          </div>
+          <div class="col-lg-4" style="width: 30%;">
+            <div class="card border-0 my-4">
+              <img src="img/blog-frontend.png" class="card-img-top" alt="JavaScript codes">
+              <div class="card-body bg-grey">
+                <p class="text-secondary fw-bold mb-1">29-06-2022<span class="border-start border-3 border-secondary ms-2 ps-2">Babatunde Badmus</span></p>
+                <a href="#" class="text-decoration-none link-primary fw-bold fs-18">Front-End  Development</a>
+                <h6 class="card-title fw-bold pt-2">Understanding Why JavaScript Should be Used in Custom Apps.</h6>
                 <p class="card-text">The reason why JavaScript should be used in custom application...</p>
-                <div class="link">
-                <a href="#" class="text-primary float-end">Read</a>
+                <div class="text-end mb-2">
+                  <a href="#" class="text-decoration-none link-primary fw-bold">Read</a>
                 </div>
-                <!-- <a href="#" class="btn btn-primary">Read</a> -->
               </div>
             </div>
-      </div>
-  <div class="col-lg-4 col-md-6 col-12 mt-3">
-              <div class="card">
-              <img src="./img/Blog297.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                  <p class="text-grey">22-06-2022 &nbsp; | &nbsp; Aishat Falope</p>
-                <h5 class="card-title text-primary">Product Management</h5>
-                <h4 class="card-title">Product Planning, Market Research and Customer Understandng</h4>
+          </div>
+          <div class="col-lg-4" style="width: 30%;">
+            <div class="card border-0 my-4">
+              <img src="img/blog-pm.png" class="card-img-top" alt="Product Management picture">
+              <div class="card-body bg-grey">
+                <p class="text-secondary fw-bold mb-1">30-06-2022<span class="border-start border-3 border-secondary ms-2 ps-2">Aishat Falope</span></p>
+                <a href="#" class="text-decoration-none link-primary fw-bold fs-18">Product Management</a>
+                <h6 class="card-title fw-bold pt-2">Product Planning, Market Research and Customer Understandng</h6>
                 <p class="card-text">Market research is a critical tool in helping companies understand...</p>
-                <div class="link">
-                <a href="#" class="text-primary float-end">Read</a>
+                <div class="text-end mb-2">
+                  <a href="#" class="text-decoration-none link-primary fw-bold">Read</a>
                 </div>
-                <!-- <a href="#" class="btn btn-primary">Read</a> -->
-              </div>
-            </div>
-      </div>
-
-
-      </div>
-    
-
-      <div class="row mb-5">
-          
-          </div>
-  </div>
-</section>
-
-<section id="cardss-two">
-<div class="container">
-    <div class="row mb-4">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide mb-4">
-            <div class="col-lg-4 col-md-6 col-12 mb-4">
-              <div class="card">
-                  <img src="./img/Blog306.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                      <p class="text-grey">22-06-2022 &nbsp; | &nbsp; Anthony John</p>
-                    <h5 class="card-title text-primary font-weight-bolder">Business</h5>
-                    <h4 class="card-title">Retracing Our Steps in the Design Industry</h4>
-                    <p class="card-text">Our mission is to admit, nuture and deploy next generation...</p>
-                    <div class="link">
-                    <a href="#" class="text-primary float-end">Read</a>
-                    </div>
-                    <!-- <a href="#" class="btn btn-primary">Read</a> -->
-                  </div>
-                </div>
-            </div>
-          </div>
-          <div class="swiper-slide mb-4">
-            <div class="col-lg-4 col-md-6 col-12 mb-4">
-              <div class="card">
-                  <img src="./img/Blog287.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                      <p class="text-grey">22-06-2022 &nbsp; | &nbsp; Ikechukwu Emmanuel</p>
-                    <h5 class="card-title text-primary font-weight-bolder">Design</h5>
-                    <h4 class="card-title">Importance of Learning Designs and New Design Concepts</h4>
-                    <p class="card-text">Kick-start Your Career in UI/UX Design In a Fast Growing Tech Company...</p>
-                    <div class="link">
-                    <a href="#" class="text-primary float-end">Read</a>
-                    </div>
-                    <!-- <a href="#" class="btn btn-primary">Read</a> -->
-                  </div>
-                </div>
-            </div>
-          </div>
-          <div class="swiper-slide mb-4">
-            <div class="col-lg-4 col-md-6 col-12 mb-4">
-              <div class="card">
-                  <img src="./img/Blog285.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                      <p class="text-grey">22-06-2022 &nbsp; | &nbsp; Yewande Adebola</p>
-                    <h5 class="card-title text-primary font-weight-bolder">Back-End Development</h5>
-                    <h4 class="card-title">Knowledge of Popular Frameworks as a Back-End Developer</h4>
-                    <p class="card-text">Data structures are popular frameworks that are essential for...</p>
-                    <div class="link">
-                    <a href="#" class="text-primary float-end">Read</a>
-                    </div>
-                    <!-- <a href="#" class="btn btn-primary">Read</a> -->
-                  </div>
-                </div>
-            </div>
-          </div>
-          <!-- <div class="swiper-slide">Slide 4</div>
-          <div class="swiper-slide">Slide 5</div>
-          <div class="swiper-slide">Slide 6</div>
-          <div class="swiper-slide">Slide 7</div>
-          <div class="swiper-slide">Slide 8</div>
-          <div class="swiper-slide">Slide 5</div>
-          <div class="swiper-slide">Slide 6</div>
-          <div class="swiper-slide">Slide 7</div>
-          <div class="swiper-slide">Slide 8</div>
-          <div class="swiper-slide">Slide 9</div> -->
-        </div>
-        <div class="swiper-pagination mt-3"></div>
-      </div>
-
-
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper mb-4">
-      <div class="swiper-slide">
-        <div class="col-lg-4 col-md-6 col-12 mb-4 mt-3">
-          <div class="card">
-              <img src="./img/Blog299.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                  <p class="text-grey">22-06-2022 &nbsp; | &nbsp; Tracy Edwards</p>
-                <h5 class="card-title text-primary">Computer Aided Design (CAD)</h5>
-                <h4 class="card-title">Engineering Sketch Generation For Computer Aided Designs</h4>
-                <p class="card-text">Engineering sketches form the 2D basis of parametric...</p>
-                <div class="link">
-                <a href="#" class="text-primary float-end">Read</a>
-                </div>
-                <!-- <a href="#" class="btn btn-primary">Read</a> -->
               </div>
             </div>
           </div>
-      </div>
-      
-      <div class="swiper-slide">
-        <div class="col-lg-4 col-md-6 col-12 mt-3 mb-4">
-          <div class="card">
-              <img src="./img/Blog298.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                  <p class="text-grey">22-06-2022 &nbsp; | &nbsp; Babatunde Badmus</p>
-                <h5 class="card-title text-primary">Front-End  Development</h5>
-                <h4 class="card-title">Understanding Why JavaScript Should be Used in Custom Apps. </h4>
-                <p class="card-text">The reason why JavaScript should be used in custom application...</p>
-                <div class="link">
-                <a href="#" class="text-primary float-end">Read</a>
-                </div>
-                <!-- <a href="#" class="btn btn-primary">Read</a> -->
-              </div>
-            </div>
         </div>
-      </div>
-    
-      <div class="swiper-slide">
-        <div class="col-lg-4 col-md-6 col-12 mt-3 mb-4">
-          <div class="card">
-          <img src="./img/Blog297.png" class="card-img-top" alt="...">
-          <div class="card-body">
-              <p class="text-grey">22-06-2022 &nbsp; | &nbsp; Aishat Falope</p>
-            <h5 class="card-title text-primary">Product Management</h5>
-            <h4 class="card-title">Product Planning, Market Research and Customer Understandng</h4>
-            <p class="card-text">Market research is a critical tool in helping companies understand...</p>
-            <div class="link">
-            <a href="#" class="text-primary float-end">Read</a>
-            </div>
-            <!-- <a href="#" class="btn btn-primary">Read</a> -->
-          </div>
-        </div>
-        </div>
-      </div>
-    
-
-
-
-      </div>
-      <div class="swiper-pagination mt-3"></div>
-      </div>
-    </div>
-</div>
-</section>
-
-<section id="Recommended-post">
-  <div class="container">
-      <div class="row p-3">
-          <div class="col-12">
-            <ul class="Recommended-Post-Body">
-
-              <li class="Recommended-Post-Text">
-                  <div class="image-section flex">
-                      <h2><img src="img/Line.png" alt="centered line"> &nbsp; Recommended Post</h2>
-                  </div>
-              </li>
-            </ul>
-          </div>
-      </div>
-      <div class="row pb-5">
-          <div class="col-lg-4 col-md-6 col-12 mb-4">
-            <div class="card">
-                <img src="./img/Blog306.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="text-grey">22-06-2022 &nbsp; | &nbsp; Anthony John</p>
-                  <h5 class="card-title text-primary">Business</h5>
-                  <h4 class="card-title">Retracing Our Steps in the Design Industry</h4>
+        <div class="swiper mySwiper mobile-view">
+          <div class="swiper-wrapper mb-3">
+            <div class="swiper-slide">
+              <div class="card border-0 my-4">
+                <img src="img/blog-business.png" class="card-img-top" alt="Girl with a desktop">
+                <div class="card-body bg-grey">
+                  <p class="text-secondary fw-bold mb-1">22-06-2022<span class="border-start border-3 border-secondary ms-2 ps-2">Anthony John</span></p>
+                  <a href="blog-readpage.html" class="text-decoration-none link-primary fw-bold fs-18">Business</a>
+                  <h6 class="card-title fw-bold pt-2">Retracing Our Steps in the Design Industry</h6>
                   <p class="card-text">Our mission is to admit, nuture and deploy next generation...</p>
-                  <div class="link">
-                  <a href="blog-readpage.html" class="text-primary float-end">Read</a>
+                  <div class="text-end mb-2">
+                    <a href="blog-readpage.html" class="text-decoration-none link-primary fw-bold">Read</a>
                   </div>
-                  <!-- <a href="#" class="btn btn-primary">Read</a> -->
                 </div>
               </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-12 mb-4">
-            <div class="card">
-                <img src="./img/Blog305.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="text-grey">22-06-2022 &nbsp; | &nbsp; Charles John</p>
-                  <h5 class="card-title text-primary">Andriod Development</h5>
-                  <h4 class="card-title">Everything You Need to Know about Andriod App</h4>
-                  <p class="card-text">With Andriod as one of the Most Powerful Operating Systems...</p>
-                  <div class="link">
-                  <a href="#" class="text-primary float-end">Read</a>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0 my-4">
+                <img src="img/blog-design.png" class="card-img-top" alt="Colorful cards">
+                <div class="card-body bg-grey">
+                  <p class="text-secondary fw-bold mb-1">21-06-2022<span class="border-start border-3 border-secondary ms-2 ps-2">Ikechukwu Emmanuel</span></p>
+                  <a href="#" class="text-decoration-none link-primary fw-bold fs-18">Design</a>
+                  <h6 class="card-title fw-bold pt-2">Importance of Learning Designs and New Design Concepts</h6>
+                  <p class="card-text">Kick-start Your Career in UI/UX Design In a Fast Growing Tech Company...</p>
+                  <div class="text-end mb-2">
+                    <a href="#" class="text-decoration-none link-primary fw-bold">Read</a>
                   </div>
-                  <!-- <a href="#" class="btn btn-primary">Read</a> -->
                 </div>
               </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-12 mb-4">
-            <div class="card">
-                <img src="./img/Blog304.png" class="card-img-top" alt="...">
-                <div class="card-body rounded-bottom" style="background-color: #D4D4D4;">
-                    <p class="text-grey">22-06-2022 &nbsp; | &nbsp; Bryan Luke</p>
-                  <h5 class="card-title text-primary">Digital Marketing</h5>
-                  <h4 class="card-title">The Ultimate List of Free Keyword Research Tools</h4>
-                  <p class="card-text">Google Trends is one of the most powerful free keyword research...</p>
-                  <div class="link">
-                  <a href="#" class="text-primary float-end">Read</a>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0 my-4">
+                <img src="img/blog-backend.png" class="card-img-top" alt="Laptop with codes">
+                <div class="card-body bg-grey">
+                  <p class="text-secondary fw-bold mb-1">16-06-2022<span class="border-start border-3 border-secondary ms-2 ps-2">Yewande Adebola</span></p>
+                  <a href="#" class="text-decoration-none link-primary fw-bold fs-18">Back-End Development</a>
+                  <h6 class="card-title fw-bold pt-2">Knowledge of Popular Frameworks as a Back-End Developer</h6>
+                  <p class="card-text">Data structures are popular frameworks that are essential for...</p>
+                  <div class="text-end mb-2">
+                    <a href="#" class="text-decoration-none link-primary fw-bold">Read</a>
                   </div>
-                  <!-- <a href="#" class="btn btn-primary">Read</a> -->
                 </div>
               </div>
-          </div>
-        </div>
-  </div>
-</section> 
-
-<section id="Recommended-post2">
-<div class="container">
-  <div class="row p-3">
-    <div class="col-12">
-      <ul class="Recommended-Post-Body">
-
-        <li class="Recommended-Post-Text">
-            <div class="image-section flex">
-                <h2><img src="img/Line.png" alt="centered line"> &nbsp; Recommended Post</h2>
             </div>
-        </li>
-      </ul>
-    </div>
-</div>
-    <div class="row pb-5">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper mb-4">
-
-      <div class="swiper-slide">
-        <div class="col-lg-4 col-md-6 col-12 mb-4">
-          <div class="card">
-              <img src="./img/Blog306.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                  <p class="text-grey">22-06-2022 &nbsp; | &nbsp; Anthony John</p>
-                <h5 class="card-title text-primary">Business</h5>
-                <h4 class="card-title">Retracing Our Steps in the Design Industry</h4>
-                <p class="card-text">Our mission is to admit, nuture and deploy next generation...</p>
-                <div class="link">
-                <a href="blog-readpage.html" class="text-primary float-end">Read</a>
-                </div>
-                <!-- <a href="#" class="btn btn-primary">Read</a> -->
-              </div>
-            </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="col-lg-4 col-md-6 col-12 mb-4">
-          <div class="card">
-              <img src="./img/Blog305.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                  <p class="text-grey">22-06-2022 &nbsp; | &nbsp; Charles John</p>
-                <h5 class="card-title text-primary">Andriod Development</h5>
-                <h4 class="card-title">Everything You Need to Know about Andriod App</h4>
-                <p class="card-text">With Andriod as one of the Most Powerful Operating Systems...</p>
-                <div class="link">
-                <a href="#" class="text-primary float-end">Read</a>
-                </div>
-                <!-- <a href="#" class="btn btn-primary">Read</a> -->
-              </div>
-            </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="col-lg-4 col-md-6 col-12 mb-4">
-          <div class="card">
-              <img src="./img/Blog304.png" class="card-img-top" alt="...">
-              <div class="card-body rounded-bottom" style="background-color: #D4D4D4;">
-                  <p class="text-grey">22-06-2022 &nbsp; | &nbsp; Bryan Luke</p>
-                <h5 class="card-title text-primary">Digital Marketing</h5>
-                <h4 class="card-title">The Ultimate List of Free Keyword Research Tools</h4>
-                <p class="card-text">Google Trends is one of the most powerful free keyword research...</p>
-                <div class="link">
-                <a href="#" class="text-primary float-end">Read</a>
-                </div>
-                <!-- <a href="#" class="btn btn-primary">Read</a> -->
-              </div>
-            </div>
-        </div>
-      </div>
-        
-
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
-      </div>
-
-
-      
-</div>
-</section> 
-
-
-<section id="card-five">
-  <div class="container">
-      <div class="row p-3">
-          <div class="col-12 mb-4">
-            <ul>
-
-              <li>
-                  <div class="image-section mt-4">
-                      <h2><img src="img/Line.png" alt="centered line"> &nbsp; Categories</h2>
+            <div class="swiper-slide">
+              <div class="card border-0 my-4">
+                <img src="img/blog-cad.png" class="card-img-top" alt="CAD Picture">
+                <div class="card-body bg-grey">
+                  <p class="text-secondary fw-bold mb-1">28-06-2022<span class="border-start border-3 border-secondary ms-2 ps-2">Tracy Edwards</span></p>
+                  <a href="#" class="text-decoration-none link-primary fw-bold fs-18">Computer Aided Design (CAD)</a>
+                  <h6 class="card-title fw-bold pt-2">Engineering Sketch Generation For Computer Aided Designs</h6>
+                  <p class="card-text">Engineering sketches form the 2D basis of parametric...</p>
+                  <div class="text-end mb-2">
+                    <a href="#" class="text-decoration-none link-primary fw-bold">Read</a>
                   </div>
-              </li>
-            </ul>
-          </div>
-      </div>
-
-        <div>
-          <div class="row" style="
-          justify-content: center;">
-              <div class="col-lg-2 col-md-4 col-12 mb-4">
-                  <div class="cardes">
-                      <img src="./img/Blog312.png" class="card-img-top" alt="...">
-                      <h5 class="card-title mt-3">Business</h5>
-                    </div>
+                </div>
               </div>
-              <div class="col-lg-2 col-md-4 col-12 mb-4">
-                  <div class="cardes">
-                      <img src="./img/Blog313.png" class="card-img-top" alt="...">
-                      <h5 class="card-title mt-3">Programming</h5>
-                    </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0 my-4">
+                <img src="img/blog-frontend.png" class="card-img-top" alt="JavaScript codes">
+                <div class="card-body bg-grey">
+                  <p class="text-secondary fw-bold mb-1">29-06-2022<span class="border-start border-3 border-secondary ms-2 ps-2">Babatunde Badmus</span></p>
+                  <a href="#" class="text-decoration-none link-primary fw-bold fs-18">Front-End  Development</a>
+                  <h6 class="card-title fw-bold pt-2">Understanding Why JavaScript Should be Used in Custom Apps.</h6>
+                  <p class="card-text">The reason why JavaScript should be used in custom application...</p>
+                  <div class="text-end mb-2">
+                    <a href="#" class="text-decoration-none link-primary fw-bold">Read</a>
+                  </div>
+                </div>
               </div>
-              <div class="col-lg-2 col-md-4 col-12 mb-4">
-                  <div class="cardes">
-                      <img src="./img/Blog314.png" class="card-img-top" alt="...">
-                      <h5 class="card-title mt-3">Design</h5>
-                    </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0 my-4">
+                <img src="img/blog-pm.png" class="card-img-top" alt="Product Management picture">
+                <div class="card-body bg-grey">
+                  <p class="text-secondary fw-bold mb-1">30-06-2022<span class="border-start border-3 border-secondary ms-2 ps-2">Aishat Falope</span></p>
+                  <a href="#" class="text-decoration-none link-primary fw-bold fs-18">Product Management</a>
+                  <h6 class="card-title fw-bold pt-2">Product Planning, Market Research and Customer Understandng</h6>
+                  <p class="card-text">Market research is a critical tool in helping companies understand...</p>
+                  <div class="text-end mb-2">
+                    <a href="#" class="text-decoration-none link-primary fw-bold">Read</a>
+                  </div>
+                </div>
               </div>
-              <div class="col-lg-2 col-md-4 col-12 mb-4">
-                  <div class="cardes">
-                      <img src="./img/Blog315.png" class="card-img-top" alt="...">
-                      <h5 class="card-title mt-3">Product Management</h5>
-                    </div>
-              </div>
-              <div class="col-lg-2 col-md-4 col-12 mb-4">
-                  <div class="cardes">
-                      <img src="./img/Blog316.png" class="card-img-top" alt="...">
-                      <h5 class="card-title mt-3">Project Management</h5>
-                    </div>
-              </div>
-              <div class="col-lg-2 col-md-4 col-12 mb-4">
-                
             </div>
           </div>
-          
-
-
-  </div>
-</section>
-
-
-
-<section id="card-fives">
-<div class="container">
-  <div class="row p-3">
-      <div class="col-12 mb-4">
-        <ul>
-
-          <li>
-              <div class="image-section mt-4">
-                  <h2><img src="img/Line.png" alt="centered line"> &nbsp; Categories</h2>
-              </div>
-          </li>
-        </ul>
-      </div>
-  </div>
-
-    <div>
-      <div class="row" style="
-      justify-content: center;">
-
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper mb-3">
-
-
-      <div class="swiper-slide">
-        <div class="col-lg-2 col-md-4 col-12 mb-4">
-          <div class="cardes">
-              <img src="./img/Blog312.png" class="card-img-top" alt="...">
-              <h5 class="card-title mt-3">Business</h5>
-            </div>
-      </div>
-      </div>
-          
-
-          <div class="swiper-slide">
-            <div class="col-lg-2 col-md-4 col-12 mb-4">
-              <div class="cardes">
-                  <img src="./img/Blog313.png" class="card-img-top" alt="...">
-                  <h5 class="card-title mt-3">Programming</h5>
-                </div>
-          </div>
-          </div>
-          
-
-          <div class="swiper-slide">
-            <div class="col-lg-2 col-md-4 col-12 mb-4">
-              <div class="cardes">
-                  <img src="./img/Blog314.png" class="card-img-top" alt="...">
-                  <h5 class="card-title mt-3">Design</h5>
-                </div>
-          </div>
-          </div>
-          
-          <div class="swiper-slide">
-            <div class="col-lg-2 col-md-4 col-12 mb-4">
-              <div class="cardes">
-                  <img src="./img/Blog315.png" class="card-img-top" alt="...">
-                  <h5 class="card-title mt-3">Product Management</h5>
-                </div>
-          </div>
-          </div>
-           
-          <div class="swiper-slide">
-            <div class="col-lg-2 col-md-4 col-12 mb-4">
-              <div class="cardes">
-                  <img src="./img/Blog316.png" class="card-img-top" alt="...">
-                  <h5 class="card-title mt-3">Project Management</h5>
-                </div>
-          </div>
-          </div>
-         
-
-
-        </div>
           <div class="swiper-pagination"></div>
-      </div>
-      </div>
-      
-
-
-</div>
-</section>
-
-
-
-   <footer class="bg-footer">
-    <div class="container py-5">
-        <div class="row py-2">
-            <div class="col-lg-8 col-md-8 col-12">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <ul class="list-unstyled fw-bold">
-                            <li class="mb-4">
-                                <a class="text-decoration-none link-secondary" href="home.html">Home</a>
-                            </li>
-                            <li class="mb-4">
-                                <a class="text-decoration-none link-secondary" href="#">Profile</a>
-                            </li>
-                            <li class="mb-4">
-                                <a class="text-decoration-none link-secondary" href="about-us-logged-in.html">About Us</a>
-                            </li>
-                            <li class="mb-4">
-                                <a class="text-decoration-none link-secondary" href="blog-login.html">Blog</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <p class="fw-bold text-light">Policies</p>
-                            <ul class="list-unstyled fs-14">
-                                <li class="pb-2">
-                                    <a class="text-decoration-none link-secondary" href="#">Terms of service</a>
-                                </li>
-                                <li class="pb-2">
-                                    <a class="text-decoration-none link-secondary" href="#">Privacy policy</a>
-                                </li>
-                                <li class="pb-2">
-                                    <a class="text-decoration-none link-secondary" href="#">Recruitment terms</a>
-                                </li>
-                            </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-12">
-                <p class="fw-bold text-light">CONTACT US</p>
-                <ul class="list-unstyled fs-14">
-                    <li>
-                        <div class="d-flex text-secondary">
-                            <i class="bi bi-geo-alt-fill me-4"></i>
-                            <p>38, Afaha Uqua Road, Eket, Akwa-Ibom State</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="d-flex text-secondary">
-                            <i class="bi bi-telephone-fill me-4"></i>
-                            <p>+234|812-8555-785</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="d-flex text-secondary">
-                            <i class="bi bi-envelope-fill me-4"></i>
-                            <p>kodecamp@gottalent.com</p>
-                        </div>
-                    </li>
-                </ul>
-                <div class="d-flex">
-                    <p class="fw-bold text-light me-4">Follow us</p>
-                    <a href="#" class="me-3 text-decoration-none link-light"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="me-3 text-decoration-none link-light"><i class="bi bi-twitter"></i></a>
-                    <a href="#" class="me-3 text-decoration-none link-light"><i class="bi bi-instagram"></i></a>
-                </div>
-                
-            </div>
         </div>
-    </div>
-</footer>
+    
+      </div>
+    </section>
+    <section id="recommended-post" class="bg-light-blue py-4 my-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="header-border fw-bold display-6 ps-3">Recommended Post</h2>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-between laptop-view">
+          <div class="col-lg-4" style="width: 30%;">
+            <div class="card border-0 my-4 bg-light-blue">
+              <img src="img/blog-andriod.png" class="card-img-top" alt="two persons viewing a laptop screen">
+              <div class="card-body bg-grey">
+                <p class="text-secondary fw-bold mb-1">20-06-2022<span class="border-start border-3 border-secondary ms-2 ps-2">Charles John</span></p>
+                <a href="#" class="text-decoration-none link-primary fw-bold fs-18">Andriod Development</a>
+                <h6 class="card-title fw-bold pt-2">Everything You Need to Know about Andriod App</h6>
+                <p class="card-text">With Andriod as one of the Most Powerful Operating Systems...</p>
+                <div class="text-end mb-2">
+                  <a href="#" class="text-decoration-none link-primary fw-bold">Read</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" style="width: 30%;">
+            <div class="card border-0 my-4 bg-light-blue">
+              <img src="img/blog-digital-marketing.png" class="card-img-top" alt="Colorful Digital Marketing text on a screen">
+              <div class="card-body bg-grey">
+                <p class="text-secondary fw-bold mb-1">24-06-2022<span class="border-start border-3 border-secondary ms-2 ps-2">Bryan Luke</span></p>
+                <a href="#" class="text-decoration-none link-primary fw-bold fs-18">Digital Marketing</a>
+                <h6 class="card-title fw-bold pt-2">The Ultimate List of Free Keyword Research Tools</h6>
+                <p class="card-text">Google Trends is one of the most powerful free keyword research...</p>
+                <div class="text-end mb-2">
+                  <a href="#" class="text-decoration-none link-primary fw-bold">Read</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" style="width: 30%;">
+            <div class="card border-0 my-4 bg-light-blue">
+              <img src="img/blog-business-recommend.png" class="card-img-top" alt="man writing on colorful sticky notes">
+              <div class="card-body bg-grey">
+                <p class="text-secondary fw-bold mb-1">22-06-2022<span class="border-start border-3 border-secondary ms-2 ps-2">Anthony John</span></p>
+                <a href="#" class="text-decoration-none link-primary fw-bold fs-18">Business</a>
+                <h6 class="card-title fw-bold pt-2">Retracing Our Steps in the Design Industry</h6>
+                <p class="card-text">Our mission is to admit, nuture and deploy next generation...</p>
+                <div class="text-end mb-2">
+                  <a href="#" class="text-decoration-none link-primary fw-bold">Read</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper mySwiper mobile-view">
+          <div class="swiper-wrapper mb-3">
+            <div class="swiper-slide">
+              <div class="card border-0 my-4 bg-light-blue">
+                <img src="img/blog-andriod.png" class="card-img-top" alt="two persons viewing a laptop screen">
+                <div class="card-body bg-grey">
+                  <p class="text-secondary fw-bold mb-1">20-06-2022<span class="border-start border-3 border-secondary ms-2 ps-2">Charles John</span></p>
+                  <a href="#" class="text-decoration-none link-primary fw-bold fs-18">Andriod Development</a>
+                  <h6 class="card-title fw-bold pt-2">Everything You Need to Know about Andriod App</h6>
+                  <p class="card-text">With Andriod as one of the Most Powerful Operating Systems...</p>
+                  <div class="text-end mb-2">
+                    <a href="#" class="text-decoration-none link-primary fw-bold">Read</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0 my-4 bg-light-blue">
+                <img src="img/blog-digital-marketing.png" class="card-img-top" alt="Colorful Digital Marketing text on a screen">
+                <div class="card-body bg-grey">
+                  <p class="text-secondary fw-bold mb-1">24-06-2022<span class="border-start border-3 border-secondary ms-2 ps-2">Bryan Luke</span></p>
+                  <a href="#" class="text-decoration-none link-primary fw-bold fs-18">Digital Marketing</a>
+                  <h6 class="card-title fw-bold pt-2">The Ultimate List of Free Keyword Research Tools</h6>
+                  <p class="card-text">Google Trends is one of the most powerful free keyword research...</p>
+                  <div class="text-end mb-2">
+                    <a href="#" class="text-decoration-none link-primary fw-bold">Read</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0 my-4 bg-light-blue">
+                <img src="img/blog-business-recommend.png" class="card-img-top" alt="man writing on colorful sticky notes">
+                <div class="card-body bg-grey">
+                  <p class="text-secondary fw-bold mb-1">22-06-2022<span class="border-start border-3 border-secondary ms-2 ps-2">Anthony John</span></p>
+                  <a href="#" class="text-decoration-none link-primary fw-bold fs-18">Business</a>
+                  <h6 class="card-title fw-bold pt-2">Retracing Our Steps in the Design Industry</h6>
+                  <p class="card-text">Our mission is to admit, nuture and deploy next generation...</p>
+                  <div class="text-end mb-2">
+                    <a href="#" class="text-decoration-none link-primary fw-bold">Read</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section id="categories" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-12 mb-2">
+            <h2 class="header-border fw-bold display-6 ps-3">Categories</h2>
+          </div>
+        </div>
+        <div class="row laptop-view">
+          <div class="col">
+            <div class="card border-0">
+              <img src="img/blog-cat-business.png" class="card-img-top" alt="Business cards">
+              <div class="card-body">
+                <a href="blog-readpage.html" class="card-text fw-bold link-dark text-decoration-none">Business</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0">
+              <img src="img/blog-cat-programming.png" class="card-img-top" alt="Laptop with codes on screen">
+              <div class="card-body">
+                <a href="#" class="card-text fw-bold link-dark text-decoration-none">Programming</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0">
+              <img src="img/blog-cat-design.png" class="card-img-top" alt="Design prototype screen">
+              <div class="card-body">
+                <a href="#" class="card-text fw-bold link-dark text-decoration-none">Design</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0">
+              <img src="img/blog-cat-pm.png" class="card-img-top" alt="Sticky notes on a white board">
+              <div class="card-body">
+                <a href="#" class="card-text fw-bold link-dark text-decoration-none">Product Management</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0">
+              <img src="img/blog-cat-project.png" class="card-img-top" alt="Laptops on a desk">
+              <div class="card-body">
+                <a href="#" class="card-text fw-bold link-dark text-decoration-none">Project Management</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper mySwiper mobile-view">
+          <div class="swiper-wrapper mb-3">
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <img src="img/blog-cat-business.png" class="card-img-top" alt="Business cards">
+                <div class="card-body">
+                  <a href="#" class="card-text fw-bold link-dark text-decoration-none">Business</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <img src="img/blog-cat-programming.png" class="card-img-top" alt="Laptop with codes on screen">
+                <div class="card-body">
+                  <a href="#" class="card-text fw-bold link-dark text-decoration-none">Programming</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <img src="img/blog-cat-design.png" class="card-img-top" alt="Design prototype screen">
+                <div class="card-body">
+                  <a href="#" class="card-text fw-bold link-dark text-decoration-none">Design</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <img src="img/blog-cat-pm.png" class="card-img-top" alt="Sticky notes on a white board">
+                <div class="card-body">
+                  <a href="#" class="card-text fw-bold link-dark text-decoration-none">Product Management</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0">
+                <img src="img/blog-cat-project.png" class="card-img-top" alt="Laptops on a desk">
+                <div class="card-body">
+                  <a href="#" class="card-text fw-bold link-dark text-decoration-none">Project Management</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-footer">
+      <div class="container py-5">
+          <div class="row py-2">
+              <div class="col-lg-8 col-md-8 col-12">
+                  <div class="row">
+                      <div class="col-lg-6 col-md-6 col-12">
+                          <p class="fw-bold text-light mobile">Quick Links</p>
+                          <ul class="list-unstyled fw-bold">
+                              <li class="mb-4">
+                                  <a class="text-decoration-none link-secondary" href="home.html">Home</a>
+                              </li>
+                              <li class="mb-4">
+                                  <a class="text-decoration-none link-secondary" href="#">Profile</a>
+                              </li>
+                              <li class="mb-4">
+                                  <a class="text-decoration-none link-secondary" href="about-us-logged-in.html">About Us</a>
+                              </li>
+                              <li class="mb-4">
+                                  <a class="text-decoration-none link-secondary" href="blog-login.html">Blog</a>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-12">
+                          <p class="fw-bold text-light">Policies</p>
+                              <ul class="list-unstyled fs-14">
+                                  <li class="pb-2">
+                                      <a class="text-decoration-none link-secondary" href="#">Terms of service</a>
+                                  </li>
+                                  <li class="pb-2">
+                                      <a class="text-decoration-none link-secondary" href="#">Privacy policy</a>
+                                  </li>
+                                  <li class="pb-2">
+                                      <a class="text-decoration-none link-secondary" href="#">Recruitment terms</a>
+                                  </li>
+                              </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-12">
+                  <p class="fw-bold text-light">CONTACT US</p>
+                  <ul class="list-unstyled fs-14">
+                      <li>
+                          <div class="d-flex text-secondary">
+                              <i class="bi bi-geo-alt-fill me-4"></i>
+                              <p>38, Afaha Uqua Road, Eket, Akwa-Ibom State</p>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="d-flex text-secondary">
+                              <i class="bi bi-telephone-fill me-4"></i>
+                              <p>+234|812-8555-785</p>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="d-flex text-secondary">
+                              <i class="bi bi-envelope-fill me-4"></i>
+                              <p>kodecamp@gottalent.com</p>
+                          </div>
+                      </li>
+                  </ul>
+                  <div class="d-flex">
+                      <p class="fw-bold text-light me-4">Follow us</p>
+                      <a href="#" class="me-3 text-decoration-none link-light"><i class="bi bi-facebook"></i></a>
+                      <a href="#" class="me-3 text-decoration-none link-light"><i class="bi bi-twitter"></i></a>
+                      <a href="#" class="me-3 text-decoration-none link-light"><i class="bi bi-instagram"></i></a>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+    </footer>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+     <!-- Swiper JS -->
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        loop: true,
-        centeredSlides: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
+     <!-- Initialize Swiper -->
+     <script>
+       var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          loop: true,
+          breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          426: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
         },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-    <!-- <script src="js/bootstrap.min.js"></script> -->
+       });
+     </script>
 </body>
 </html>
