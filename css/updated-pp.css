@@ -1,0 +1,70 @@
+body{font-family: 'Inter', sans-serif;}
+
+.bg-blue {
+    background-color: rgba(39, 118, 234, 1);
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.75);
+}
+.bg-footer {
+    background-color: rgba(8, 24, 47, 1);
+}
+.fs-14 {
+    font-size: 14px;
+}
+.mobile {
+    display: none;
+}
+.form-color{
+    background-color: #F5F5F5;
+}
+.img2 {
+    height: 28vh;
+}
+.img1 {
+    top: 30%;
+    height: 35vh;
+}
+.edit-btn{
+    right: 36% !important;
+}
+@media (max-width: 992px) {
+    .mobile {
+        display: block;
+    }
+    .navbar-nav i {
+        display: none;
+    }
+    .navbar-nav {
+        font-weight: bold;
+    }
+}
+@media(max-width: 769px){
+    .form{
+        width: 75% !important;
+    }
+    .edit-btn{
+        right: 30% !important;
+    }
+}
+@media(max-width: 426px){
+    .form{
+        width: 100% !important;
+    }
+    .btn a{
+        width: 40% !important;
+    }
+    .edit-btn{
+        right: 16% !important;
+    }
+}
+@media(max-width: 375px){
+    .edit-btn{
+        right: 12% !important;
+    }
+}
+@media(max-width: 320px){
+    .edit-btn{
+        right: 5% !important;
+    }
+}
