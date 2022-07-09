@@ -1,4 +1,7 @@
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
 .icon-display {
@@ -9,6 +12,15 @@
 }
 .button-active-color {
     background-color: #2776EA !important;
+}
+
+.sign-in-personnel {
+    background-image: url(../img/sign-in-image.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+    width: 100%;
 }
 @media (max-width: 767px) {
     .sign-in-personnel img {

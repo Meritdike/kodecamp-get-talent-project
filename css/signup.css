@@ -16,10 +16,18 @@
     background-color: #2776EA !important;
 }
 
+#sign-up-image {
+    background-image: url(../img/man\ image\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* height: auto; */
+}
+
 /* Mobile screen */
 @media (max-width: 350px) {
     #navtext, #join{
-        font-size: 10px;
+        font-size: 12px;
     }
 
 }
