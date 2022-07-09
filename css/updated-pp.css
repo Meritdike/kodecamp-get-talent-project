@@ -21,6 +21,9 @@ body{font-family: 'Inter', sans-serif;}
 .img2 {
     height: 28vh;
 }
+.profile-info{
+    color: #555555;
+}
 .img1 {
     top: 30%;
     height: 35vh;
