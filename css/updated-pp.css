@@ -28,9 +28,9 @@ body{font-family: 'Inter', sans-serif;}
     top: 30%;
     height: 35vh;
 }
-.edit-btn{
-    right: 36% !important;
-}
+.btn a{
+    width: 40% !important;
+} 
 @media (max-width: 992px) {
     .mobile {
         display: block;
@@ -46,28 +46,15 @@ body{font-family: 'Inter', sans-serif;}
     .form{
         width: 75% !important;
     }
-    .edit-btn{
-        right: 30% !important;
+    .mod-cardd{
+        width: 100% !important;
+    }
+    .btn-mod{
+        width: 100% !important;
     }
 }
 @media(max-width: 426px){
     .form{
         width: 100% !important;
-    }
-    .btn a{
-        width: 40% !important;
-    }
-    .edit-btn{
-        right: 16% !important;
-    }
-}
-@media(max-width: 375px){
-    .edit-btn{
-        right: 12% !important;
-    }
-}
-@media(max-width: 320px){
-    .edit-btn{
-        right: 5% !important;
     }
 }
