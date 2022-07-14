@@ -61,15 +61,12 @@
     <div class="recruiter-info container py-5">
         <div class="row">
             <div class="col-12">
-                <h2 class="fs-1 pt fw-bold ps-3" style="border-left: 10px solid #2776EA;">Recruiter Account Information</h2>
+                <h2 class="fs-1 pt fw-bold ps-3" style="border-left: 10px solid #2776EA;">Edit Information</h2>
                 <hr class="pt-1">
                 <p>Tell us about you. This information will not be shown to recruiters</p>
                 <div style="height: 100px; background: #6FA4F1;" class="rounded images position-relative mb-5">
                     <img src="img/pp-circle.png" class="position-absolute img1 start-50 translate-middle-x img-fluid" alt="">
                     <img src="img/pp-man.png" class="position-absolute top-50 img2 start-50 translate-middle-x img-fluid" alt="picture">
-                </div>
-                <div class="position-relative">
-                    <button type="button" class="btn btn-primary edit-btn position-absolute top-100"><i class="bi bi-pencil-square"></i></button>
                 </div>
             </div>
         </div>
@@ -103,8 +100,33 @@
             <label for="exampleFormControlTextarea1" class="form-label fw-bold">About the company</label>
             <textarea class="form-control border-0 form-color" id="exampleFormControlTextarea1" rows="8"></textarea>
         </div>
-        <div class="btn d-flex align-items-center justify-content-center mt-5">
-            <a href="profile-page.html" role="button" class="btn btn-primary w-25">Save</a>
+        <div class="btn d-flex align-items-center justify-content-center my-5">
+            <a href="#" role="button"data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-primary mb-5 w-25 me-5">Save
+            </a>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog  modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body container">
+                            <div class="container my-5">
+                                <div class="card text-center mod-cardd mx-auto" style="border: 1px solid #3AB418;">
+                                    <div class="card-body border-bottom" style="background-color: #3AB418;">
+                                        <h2 class="card-title text-white">Great!</h2>
+                                    </div>
+                                    <div class="image h-100">
+                                        <img src="img/pp-modal.png" class="card-img-bottom w-25 mx-auto pt-5 pb-3" alt="Modal">
+                                        <p class="pb-5">Your changes have been made.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container btn-mod w-50 mx-auto">
+                                <a href="profile-page.html" role="button" class="btn btn-secondary border-0 mt-5 w-" style="background-color: #3AB418;">Close</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            <a href="profile-page.html" role="button" class="btn btn-outline-primary mb-5 w-25">Cancel</a>
         </div>
     </div>
     <footer class="bg-footer">

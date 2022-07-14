@@ -25,6 +25,9 @@ body{font-family: 'Inter', sans-serif;}
 .profile-info{
     color: #555555;
 }
+.btn a{
+    width: 40% !important;
+}
 .input-box{
     color: #2B2B2B;
     background-color: #F5F5F5;
