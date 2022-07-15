@@ -1,91 +1,109 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
- padding: 0 ;
- margin: 0 ;
- box-sizing: border-box !important;
- font-family: "Inter", sans-serif !important;
+padding: 0 ;
+margin: 0 ;
+box-sizing: border-box !important;
+font-family: "Inter", sans-serif !important;
 }
 
 /*Header styling*/
 
 .bg-blue {
-    background-color: rgba(39, 118, 234, 1);
+  background-color: rgba(39, 118, 234, 1);
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgba(255,255,255,.75);
+  color: rgba(255,255,255,.75);
 }
 
 .bg-footer {
-    background-color: rgba(8, 24, 47, 1);
+  background-color: rgba(8, 24, 47, 1);
 }
 
 .fs-14 {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .rounded-top{
- border-top-left-radius: 5px !important;
- border-top-right-radius: 5px !important;
+border-top-left-radius: 5px !important;
+border-top-right-radius: 5px !important;
 }
 
 .rounded{
- border-radius: 5px !important;
+border-radius: 5px !important;
 }
 
 .fs-7{
- font-size: 12px !important;
+font-size: 12px !important;
 }
+
 
 /* for both side header to be in the same height of 80px */
 .left-side-header, 
 .right-side-header{
- height: 70px;
+height: 50px;
 }
 
 .messenger{
-    max-width: 190px; 
+  max-width: 200px; 
 }
 
-.active-message {
-  border-left: 4px solid rgba(39, 118, 234, 1)!important;
-  margin-bottom: 2px !important;
+.active-message{
+border-left: 3px solid rgba(39, 118, 234, 1);
+margin-bottom: 2px !important;
 }
+
+
 .bi-search{
+cursor: pointer;
+}
+
+.pointer{
   cursor: pointer;
 }
 
-.bi-search:hover .input {
-  display: block !important;
-}
-
-.mobile-msg-input{
+.mobile-header{
   display: none !important;
 }
 
-.pointer {
-  cursor: pointer;
+
+.mobile-msg-input{
+display: none !important;
 }
 
-.mobile-header {
-  display: none;
+.sender .lh-1{
+line-height: 1.2 !important;
+font-weight: 500 !important;
 }
+
+.bg-light{
+  background-color: #F5F5F5 !important;
+}
+
+.lh-1{
+  line-height: 1.2 !important;
+}
+
+
+
+.border-primary{
+  border-color: #93BBF5 !important;
+}
+
 
 @media (max-width: 992px) {
   .mobile-header {
       display: block;
   }
 
+  .navbar-nav {
+      font-weight: bold;
+  }
+
   .navbar-nav i {
       display: none;
   }
 
-  .navbar-nav {
-      font-weight: bold;
-  }
-}
-
-@media (max-width: 978px){
   .sender .fs-7{
     padding: 0px !important;
     
@@ -95,7 +113,9 @@
     width: 90% !important;
     
   }
+
 }
+
 
 @media (max-width: 426px){
   .container{
@@ -117,8 +137,9 @@
     padding-top: 0 !important;
     background-color: white;
   }
-  .wrapper{
-    border: none !important;
+  
+  .top{
+    border-top: 1px solid #93BBF5!important;
   }
   .display-img{
     width: 50px;
@@ -135,6 +156,9 @@
   .w-75{
     width: 75% !important;
     
+  }
+  .active-message{
+    border: none ;
   }
   
   .messenger .fs-7{
@@ -159,6 +183,10 @@
    right: 70px;
   }
 
+  .right-mobile-header{
+    
+  }
+
   .right-side-header{
     display: none !important;
   }
@@ -169,42 +197,50 @@
 
   .message-wrapper:nth-child(odd){
     background-color: #D4E4FB!important;
-    margin-left: 2px !important;
+    margin-left: 3px !important;
     border-top-left-radius: 20px !important;
     border-top-right-radius: 20px !important;
     border-bottom-right-radius: 20px !important;
+    /* margin-right: auto !important;
+    margin-right: 10px !important; */
   }
   
   .message-wrapper:nth-child(even){
     background-color: #93BBF5!important;
-    margin-right: 3px !important;
+    margin-right: 5px !important;
     border-top-left-radius: 20px !important;
     border-top-right-radius: 20px !important;
-    border-bottom-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important; 
   }
   
   .sender .lh-1{
     margin-bottom: 5px !important;
-    line-height: 1.2 !important;
-    
+    line-height: 1.5 !important;
+    padding-right: 20px !important
   }
-  .sender .pe-5{
-    padding-right: 50px !important;
+
+  .time{
+    text-align: end !important;
+  }
+
+  .sender h6{
+    display: none !important;
   }
 
   .message-input{
     display: none !important;
   }
+
   .mobile-msg-input{
     display: flex !important;
     margin-top: 50px !important;
   }
+
   .right-side{
     padding-bottom: 0 !important;
   }
 
-  .cashion, 
-  .letswane{
+  .cashion{
     display: flex !important;
   }
 
