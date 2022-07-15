@@ -37,53 +37,54 @@
  font-size: 12px !important;
 }
 
+
+
 /* for both side header to be in the same height of 80px */
 .left-side-header, 
 .right-side-header{
- height: 70px;
+ height: 50px;
 }
 
 .messenger{
     max-width: 190px; 
-}
+ }
 
-.active-message {
-  border-left: 4px solid rgba(39, 118, 234, 1)!important;
+.active-message{
+  border-left: 3px solid blue;
   margin-bottom: 2px !important;
+}
+.active-message:hover{
+  
+  border-left-color: blue !important ;
+  border-left-width: 4px !important;
 }
 .bi-search{
   cursor: pointer;
 }
 
-.bi-search:hover .input {
-  display: block !important;
-}
 
-.mobile-msg-input{
-  display: none !important;
-}
-
-.pointer {
-  cursor: pointer;
-}
-
-.mobile-header {
-  display: none;
-}
-
-@media (max-width: 992px) {
-  .mobile-header {
-      display: block;
+  .mobile-msg-input{
+    display: none !important;
+  }
+ 
+  .sender .lh-1{
+    line-height: 1.2 !important;
+    font-weight: 500 !important;
   }
 
-  .navbar-nav i {
-      display: none;
+  .bg-light{
+    background-color: #F5F5F5 !important;
   }
 
-  .navbar-nav {
-      font-weight: bold;
+  .lh-1{
+    line-height: 1.2 !important;
   }
-}
+
+  .border-primary{
+   border-color: #93BBF5 !important;
+  }
+
+  
 
 @media (max-width: 978px){
   .sender .fs-7{
@@ -118,7 +119,11 @@
     background-color: white;
   }
   .wrapper{
-    border: none !important;
+    background-color: yello !important;
+  }
+
+  .top{
+    border-top: 1px solid #93BBF5!important;
   }
   .display-img{
     width: 50px;
@@ -135,6 +140,9 @@
   .w-75{
     width: 75% !important;
     
+  }
+  .active-message{
+    border: none ;
   }
   
   .messenger .fs-7{
@@ -159,6 +167,10 @@
    right: 70px;
   }
 
+  .right-mobile-header{
+    
+  }
+
   .right-side-header{
     display: none !important;
   }
@@ -169,28 +181,45 @@
 
   .message-wrapper:nth-child(odd){
     background-color: #D4E4FB!important;
-    margin-left: 2px !important;
+    margin-left: 3px !important;
     border-top-left-radius: 20px !important;
     border-top-right-radius: 20px !important;
     border-bottom-right-radius: 20px !important;
+    /* margin-right: auto !important;
+    margin-right: 10px !important; */
   }
   
   .message-wrapper:nth-child(even){
     background-color: #93BBF5!important;
-    margin-right: 3px !important;
+    margin-right: 5px !important;
     border-top-left-radius: 20px !important;
     border-top-right-radius: 20px !important;
-    border-bottom-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important; 
   }
   
   .sender .lh-1{
     margin-bottom: 5px !important;
-    line-height: 1.2 !important;
-    
+    line-height: 1.5 !important;
+    padding-right: 20px !important
   }
+
+  .time{
+    text-align: end !important;
+  }
+
   .sender .pe-5{
-    padding-right: 50px !important;
+    /* padding-right: 20px !important; */
   }
+
+  .sender h6{
+    display: none !important;
+  }
+
+  /* .sender .text-dark{
+    color:#2B2B2B !important;
+    font-weight: 400 !important;
+    background-color: #93BBF5 !important;
+  } */
 
   .message-input{
     display: none !important;
