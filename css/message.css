@@ -45,23 +45,26 @@ height: 50px;
 }
 
 .messenger{
-  max-width: 190px; 
+  max-width: 200px; 
 }
 
 .active-message{
-border-left: 3px solid blue;
+border-left: 3px solid rgba(39, 118, 234, 1);
 margin-bottom: 2px !important;
 }
-.active-message:hover{
-border-left-color: blue !important ;
-border-left-width: 4px !important;
-}
+
 
 .bi-search{
 cursor: pointer;
 }
 
-.bi-search
+.pointer{
+  cursor: pointer;
+}
+
+.mobile-header{
+  display: none !important;
+}
 
 
 .mobile-msg-input{
@@ -134,10 +137,7 @@ font-weight: 500 !important;
     padding-top: 0 !important;
     background-color: white;
   }
-  .wrapper{
-    background-color: yello !important;
-  }
-
+  
   .top{
     border-top: 1px solid #93BBF5!important;
   }
@@ -223,33 +223,24 @@ font-weight: 500 !important;
     text-align: end !important;
   }
 
-  .sender .pe-5{
-    /* padding-right: 20px !important; */
-  }
-
   .sender h6{
     display: none !important;
   }
 
-  /* .sender .text-dark{
-    color:#2B2B2B !important;
-    font-weight: 400 !important;
-    background-color: #93BBF5 !important;
-  } */
-
   .message-input{
     display: none !important;
   }
+
   .mobile-msg-input{
     display: flex !important;
     margin-top: 50px !important;
   }
+
   .right-side{
     padding-bottom: 0 !important;
   }
 
-  .cashion, 
-  .letswane{
+  .cashion{
     display: flex !important;
   }
 
