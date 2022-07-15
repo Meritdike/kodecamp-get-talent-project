@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Inter', sans-serif;
 }
 
 #signup {
@@ -36,7 +37,7 @@
         display: none;
     }
      #bottom-text{
-        font-size: 12px;
+        font-size: 13px;
     }
 
 }
@@ -45,6 +46,31 @@
 @media (min-width: 425px) and (max-width: 767px) {
     .form-bg {
         display: none;
+    }
+
+    #bottom-text{
+        font-size: 14px;
+    }
+    
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+    .icon-container {
+        max-width: 720px !important;
+    }
+    
+}
+
+@media (min-width: 550px) and (max-width: 992px) {
+    .google-container {
+        max-width: 580px !important;
+    }
+    
+}
+
+@media (min-width: 550px) and (max-width: 992px) {
+    .fp-container {
+        width: 65% !important;
     }
     
 }

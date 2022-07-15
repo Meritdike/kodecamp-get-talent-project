@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -42,7 +40,16 @@
     display: none;
 }
 
+.border-top {
+    border-top: transparent !important;
+}
+
 @media (max-width: 992px) {
+
+    .border-top {
+        border-top: 1px solid #dee2e6 !important;
+    }
+
     .btn-outline-blue {
         border: none;
         width: auto;

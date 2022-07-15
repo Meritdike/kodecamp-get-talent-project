@@ -18,6 +18,10 @@ body{font-family: 'Inter', sans-serif;}
     border-left: 10px solid rgba(39, 118, 234, 1);
 }
 
+.border-top {
+    border-top: transparent !important;
+}
+
 .get-started{position: relative;}
 
 .gs{background-image: url('../img/first-circles.png'); background-repeat: no-repeat; background-position: left top; background-size: 100% 100%; width:80px; height: 50%; position: absolute; z-index: -1; }
@@ -61,6 +65,9 @@ body{font-family: 'Inter', sans-serif;}
     .blog-image3{margin: 0 0 0 30px !important;}
 }
 @media (max-width: 992px) {
+    .border-top {
+        border-top: 1px solid #dee2e6 !important;
+    }
     .btn-outline-blue {border: none; width: auto;}
     .btn-outline-blue:hover {border: none; background-color: transparent; color: #fff;}
     .navbar-nav {font-weight: bold;}

@@ -1,6 +1,21 @@
 * {
     font-family: 'Inter', sans-serif;
 }
+
+@media (min-width: 575px) and (max-width: 767px) {
+    .icon-container {
+        max-width: 720px !important;
+    }
+    
+}
+
+@media (min-width: 550px) and (max-width: 992px) {
+    .google-container {
+        max-width: 580px !important;
+    }
+    
+}
+
 @media (min-width: 540px) {
     #google-container {
         width: 50% !important;
