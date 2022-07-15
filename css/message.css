@@ -50,7 +50,6 @@ height: 50px;
 
 .active-message{
 border-left: 3px solid rgba(39, 118, 234, 1);
-margin-bottom: 2px !important;
 }
 
 
@@ -63,7 +62,7 @@ cursor: pointer;
 }
 
 .mobile-header{
-  display: none !important;
+  display: none;
 }
 
 
@@ -84,7 +83,14 @@ font-weight: 500 !important;
   line-height: 1.2 !important;
 }
 
+.outline-none {
+  outline: none;
+  border: 1px solid #F5F5F5 !important;
+}
 
+.outline-none:focus-visible {
+  border: 1px solid rgba(39, 118, 234, 1) !important;
+}
 
 .border-primary{
   border-color: #93BBF5 !important;
@@ -157,6 +163,7 @@ font-weight: 500 !important;
     width: 75% !important;
     
   }
+
   .active-message{
     border: none ;
   }
@@ -166,8 +173,6 @@ font-weight: 500 !important;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    
-
   }
   .msg-search{
     display: none !important;
@@ -181,10 +186,6 @@ font-weight: 500 !important;
    top:20px !important;
    left: 70px !important; 
    right: 70px;
-  }
-
-  .right-mobile-header{
-    
   }
 
   .right-side-header{
