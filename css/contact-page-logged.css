@@ -33,9 +33,9 @@
     color: #fff;
 }
 
-.main-content {
+/* .main-content {
     height: 85vh;
-}
+} */
 
 .success-box {
     width: 70vh;
@@ -66,6 +66,11 @@
         margin-bottom: 0px !important;
     }
 }
+@media(max-width: 768px){
+    .success-box{
+        width: 80% !important;
+    }
+}
 
 @media (max-width: 767px) {
     #hero-section .container {
@@ -84,6 +89,6 @@
 
 @media (max-width: 426px) {
     .success-box {
-        width: 100%;
+        width: 100% !important;
     }
 }

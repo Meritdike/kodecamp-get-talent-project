@@ -1,13 +1,24 @@
 * {
     font-family: 'Inter', sans-serif;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     #sign-up-wrapper {
-        width: 40% !important;
+        width: 100% !important;
     }
+    .su-btn{
+        width: 70% !important;
+    }
+    #mod-cover{
+        width: 70% !important;
+    }   
 }
 @media (max-width: 610px) {
     #wrapper {
         padding-left: 0 !important;
     }
+}
+@media (max-width: 426px){
+    #mod-cover{
+        width: 100% !important;
+    }   
 }
