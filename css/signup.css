@@ -24,6 +24,12 @@
     /* height: auto; */
 }
 
+@media (max-width: 768px){
+    #mod-cover{
+        width: 70% !important;
+    }
+}
+
 /* Mobile screen */
 @media (max-width: 350px) {
     #navtext, #join{
@@ -37,6 +43,9 @@
     }
      #bottom-text{
         font-size: 12px;
+    }
+    #mod-cover{
+        width: 100% !important;
     }
 
 }
