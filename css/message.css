@@ -44,7 +44,7 @@ height: 50px;
 }
 
 .messenger{
-  max-width: 200px; 
+  width: 200px; 
 }
 
 .active-message{
@@ -154,7 +154,7 @@ font-weight: 500 !important;
     width: 12px;
   }
 
-  .yes{
+  .time-mark p{
     font-size: 9px !important;
   }
 
@@ -244,7 +244,19 @@ font-weight: 500 !important;
     display: flex !important;
   }
 
+  .messages-header{
+    display: none !important;
+  }
+
   
+}
+
+@media (max-width: 326px){
+  .avatar{
+    margin-right: 10px !important;
+
+  }
+
 }
 
 
