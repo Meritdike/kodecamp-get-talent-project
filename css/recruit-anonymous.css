@@ -65,6 +65,20 @@
 .select-button{
     border:1px solid rgba(85,85,85,1)!important;
 }
+.card-img-top{
+    width: 67%;  
+}
+.R-bg-primary, .R-btn-primary{
+    background: rgba(39, 118, 234, 1);
+    color: #fff;
+
+}
+.R-text-primary{
+    color: rgba(39, 118, 234, 1);
+}
+.card-text{
+    font-size: 14px!important;
+}
 @media (max-width: 768px) {
     .carrd{
         max-width: 100%;
