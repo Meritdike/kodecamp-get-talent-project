@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 *{
 padding: 0 ;
 margin: 0 ;
@@ -95,8 +97,13 @@ font-weight: 500 !important;
   border-color: #93BBF5 !important;
 }
 
+.messages-header h5{
+  
+}
+
 
 @media (max-width: 992px) {
+
   .mobile-header {
       display: block;
   }
@@ -125,6 +132,7 @@ font-weight: 500 !important;
 @media (max-width: 426px){
   .container{
     margin-top: 0!important;
+    width: 100% !important;
   }
   .chat{
     /* position: absolute; */
