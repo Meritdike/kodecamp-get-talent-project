@@ -16,7 +16,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-blue fixed-top">
             <div class="container">
               <a class="navbar-brand me-5 pe-5" aria-current="page" href="home.html"><img src="img/pp-logo.png" alt="Logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,8 +44,20 @@
                     <li class="nav-item">
                       <a class="nav-link me-lg-2" href="message.html">Message<i class="bi bi-chat-text-fill text-white ms-2"></i></a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                       <a class="nav-link me-lg-2" href="#">Notification<i class="bi bi-bell-fill text-white ms-2"></i></a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link me-lg-2 position-relative" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Notification<i class="bi bi-bell-fill text-white ms-2"></i><span class="position-absolute top-25 start-75 translate-middle p-1 bg-danger border border-danger rounded-circle">
+                            <span class="visually-hidden">New alerts</span>
+                          </span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item blue" href="message.html"><i class="bi bi-chat-text-fill me-3"></i>You have 2 new messages</a></li>
+                          <li><a class="dropdown-item blue" href="recruit.html"><i class="bi bi-person me-3"></i>3 new recruits was added</a></li>
+                          <li><hr class="dropdown-divider blue"></li>
+                          <li><a class="dropdown-item blue" href="blog-login.html"><i class="bi bi-type-bold me-3"></i>New blog updates</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link active me-lg-2" href="profile-page.html">Profile<i class="bi bi-person-circle text-white ms-2"></i></a>
@@ -58,12 +70,12 @@
             </div>
           </nav>
     </header>
-    <div class="recruiter-info container py-5">
+    <div class="recruiter-info container py-5 mt-5">
         <div class="row">
             <div class="col-12">
                 <h2 class="fs-1 pt fw-bold ps-3" style="border-left: 10px solid #2776EA;">Recruiter Account Information</h2>
                 <hr class="pt-1">
-                <p>Tell us about you. This information will not be shown to recruiters</p>
+                <p>Tell us about you. Your information will be kept confidential</p>
                 <div style="height: 100px; background: #6FA4F1;" class="rounded images position-relative mb-5">
                     <img src="img/pp-circle.png" class="position-absolute img1 start-50 translate-middle-x img-fluid" alt="">
                     <img src="img/pp-man.png" class="position-absolute top-50 img2 start-50 translate-middle-x img-fluid" alt="picture">
@@ -101,7 +113,7 @@
                 <div class="col-lg-12 pb-5">
                     <p class="fw-bold">About the company</p>
                     <div class="input-box1 ">
-                        <p>At Trafford Technology, we are a diverse technology firm focused on how to solve society and humanity problems with the use of technology inclined solutions.</p> <p> We are one of the leading tech firms in Ireland, ranked in forbes top 10 tech firms in Europe. An organisation aimed at fueling and enhancing all forms of which services should be rendered. The management team lead by Mr. Firo Luppi who has head many companies around the world, we recently built the fastest software application for E-payment, also designed Robotic AI chips to help run machines without a driver due to advance in motion sensitivity.</p> <p> Our staff and Interns are people employed around the world, which some of them work full time, part-time or remotely, working 40 hours per week. We continue on our trend in providing a sustainable world of AI eliminate human limitations.</p>
+                        <p>At Trafford Technology, we are a diverse technology firm focused on how to solve society and humanity problems with the use of technology inclined solutions.</p> <p> We are one of the leading tech firms in Ireland, ranked in forbes top 10 tech firms in Europe. An organisation aimed at fueling and enhancing all forms of which services should be rendered. The management team led by Mr. Firo Luppi who has headed many companies around the world, we recently built the fastest software application for E-payment, also designed Robotic AI chips to help run machines without a driver due to advance in motion sensitivity.</p> <p> Our staff and Interns are people employed around the world, which some of them work full time, part-time or remotely, working 40 hours per week. We continue on our trend in providing a sustainable world of AI eliminate human limitations.</p>
                     </div>
                 </div>
             </div>
@@ -146,7 +158,9 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-12">
-                    <p class="fw-bold text-light">CONTACT US</p>
+                    <div class="mb-3">
+                        <a href="contact-page-logged.html" class="fw-bold text-decoration-none link-light">CONTACT US</a>
+                    </div>
                     <ul class="list-unstyled fs-14">
                         <li>
                             <div class="d-flex text-secondary">

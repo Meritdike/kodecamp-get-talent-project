@@ -9,6 +9,15 @@
     background-color: rgba(39, 118, 234, 1);
 }
 
+.blue {
+    color: rgba(39, 118, 234, 1);
+}
+
+.blue:hover {
+    color: #fff;
+    background-color: rgba(39, 118, 234, 0.8);
+}
+
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255,255,255,.75);
 }

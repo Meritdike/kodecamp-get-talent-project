@@ -24,6 +24,15 @@ body{font-family: 'Inter', sans-serif;}
     border-left: 10px solid rgba(39, 118, 234, 1);
 }
 
+.blue {
+    color: rgba(39, 118, 234, 1);
+}
+
+.blue:hover {
+    color: #fff;
+    background-color: rgba(39, 118, 234, 0.8);
+}
+
 .get-started{position: relative;}
 
 .gs{background-image: url('../img/first-circles.png'); background-repeat: no-repeat; background-position: left top; background-size: 100% 100%; width:80px; height: 50%; position: absolute; z-index: -1; }

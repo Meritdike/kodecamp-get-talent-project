@@ -20,7 +20,7 @@
 <body>
 
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-blue fixed-top">
           <div class="container">
             <a class="navbar-brand me-5 pe-5" href="home.html"><img src="img/logged-in-header-logo.png" alt="Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,8 +48,20 @@
                   <li class="nav-item">
                     <a class="nav-link me-lg-2" href="message.html">Message<i class="bi bi-chat-text-fill text-white ms-2"></i></a>
                   </li>
-                  <li class="nav-item">
+                  <!-- <li class="nav-item">
                     <a class="nav-link me-lg-2" href="#">Notification<i class="bi bi-bell-fill text-white ms-2"></i></a>
+                  </li> -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link me-lg-2 position-relative" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Notification<i class="bi bi-bell-fill text-white ms-2"></i><span class="position-absolute top-25 start-75 translate-middle p-1 bg-danger border border-danger rounded-circle">
+                        <span class="visually-hidden">New alerts</span>
+                      </span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item blue" href="message.html"><i class="bi bi-chat-text-fill me-3"></i>You have 2 new messages</a></li>
+                      <li><a class="dropdown-item blue" href="recruit.html"><i class="bi bi-person me-3"></i>3 new recruits was added</a></li>
+                      <li><hr class="dropdown-divider blue"></li>
+                      <li><a class="dropdown-item blue" href="blog-login.html"><i class="bi bi-type-bold me-3"></i>New blog updates</a></li>
+                    </ul>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link me-lg-2" href="profile-page.html">Profile<i class="bi bi-person-circle text-white ms-2"></i></a>
@@ -62,7 +74,7 @@
           </div>
         </nav>
     </header>
-    <section id="hero-section">
+    <section id="hero-section" class="mt-5">
       <div class="image-section">
         <h2 class="fw-bold display-5 text-white d-flex justify-content-center align-items-center" style="height: 50vh;">Our Blog</h2>
       </div>
@@ -490,34 +502,35 @@
                   </div>
               </div>
               <div class="col-lg-4 col-md-4 col-12">
-                  <p class="fw-bold text-light">CONTACT US</p>
-                  <ul class="list-unstyled fs-14">
-                      <li>
-                          <div class="d-flex text-secondary">
-                              <i class="bi bi-geo-alt-fill me-4"></i>
-                              <p>38, Afaha Uqua Road, Eket, Akwa-Ibom State</p>
-                          </div>
-                      </li>
-                      <li>
-                          <div class="d-flex text-secondary">
-                              <i class="bi bi-telephone-fill me-4"></i>
-                              <p>+234|812-8555-785</p>
-                          </div>
-                      </li>
-                      <li>
-                          <div class="d-flex text-secondary">
-                              <i class="bi bi-envelope-fill me-4"></i>
-                              <p>kodecamp@gottalent.com</p>
-                          </div>
-                      </li>
-                  </ul>
-                  <div class="d-flex">
-                      <p class="fw-bold text-light me-4">Follow us</p>
-                      <a href="#" class="me-3 text-decoration-none link-light"><i class="bi bi-facebook"></i></a>
-                      <a href="#" class="me-3 text-decoration-none link-light"><i class="bi bi-twitter"></i></a>
-                      <a href="#" class="me-3 text-decoration-none link-light"><i class="bi bi-instagram"></i></a>
-                  </div>
-                  
+                <div class="mb-3">
+                  <a href="contact-page-logged.html" class="fw-bold text-decoration-none link-light">CONTACT US</a>
+                </div>
+                <ul class="list-unstyled fs-14">
+                    <li>
+                        <div class="d-flex text-secondary">
+                            <i class="bi bi-geo-alt-fill me-4"></i>
+                            <p>38, Afaha Uqua Road, Eket, Akwa-Ibom State</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="d-flex text-secondary">
+                            <i class="bi bi-telephone-fill me-4"></i>
+                            <p>+234|812-8555-785</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="d-flex text-secondary">
+                            <i class="bi bi-envelope-fill me-4"></i>
+                            <p>kodecamp@gottalent.com</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                  <p class="fw-bold text-light me-4">Follow us</p>
+                  <a href="#" class="me-3 text-decoration-none link-light"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="me-3 text-decoration-none link-light"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="me-3 text-decoration-none link-light"><i class="bi bi-instagram"></i></a>
+                </div>
               </div>
           </div>
       </div>

@@ -22,6 +22,14 @@ body{font-family: 'Inter', sans-serif;}
     top: 30%;
     height: 35vh;
 }
+.blue {
+    color: rgba(39, 118, 234, 1);
+}
+
+.blue:hover {
+    color: #fff;
+    background-color: rgba(39, 118, 234, 0.8);
+}
 .profile-info{
     color: #555555;
 }

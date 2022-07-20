@@ -26,6 +26,15 @@
     display: none;
 }
 
+.blue {
+    color: rgba(39, 118, 234, 1);
+}
+
+.blue:hover {
+    color: #fff;
+    background-color: rgba(39, 118, 234, 0.8);
+}
+
 @media (max-width: 992px) {
     .mobile {
         display: block;
@@ -52,8 +61,13 @@
 .R-bg-primary, .R-btn-primary{
     background: rgba(39, 118, 234, 1);
     color: #fff;
-
 }
+
+.R-btn-primary:hover {
+    color: #fff;
+    background: rgb(10, 89, 207);
+}
+
 .R-text-primary{
     color: rgba(39, 118, 234, 1);
 }

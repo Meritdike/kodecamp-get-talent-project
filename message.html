@@ -15,7 +15,7 @@
 </head>
 <body>
   <header class="position-relative">
-     <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
+     <nav class="navbar navbar-expand-lg navbar-dark bg-blue fixed-top">
          <div class="container">
             <a class="navbar-brand me-5 pe-5" aria-current="page" href="home.html"><img src="img/logged-in-header-logo.png" alt="Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,9 +43,21 @@
                 <li class="nav-item">
                     <a class="nav-link me-lg-2 active" href="message.html">Message<i class="bi bi-chat-text-fill text-white ms-2"></i></a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link me-lg-2" href="#">Notification<i class="bi bi-bell-fill text-white ms-2"></i></a>
-                </li>
+                </li> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link me-lg-2 position-relative" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Notification<i class="bi bi-bell-fill text-white ms-2"></i><span class="position-absolute top-25 start-75 translate-middle p-1 bg-danger border border-danger rounded-circle">
+                        <span class="visually-hidden">New alerts</span>
+                      </span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item blue" href="message.html"><i class="bi bi-chat-text-fill me-3"></i>You have 2 new messages</a></li>
+                      <li><a class="dropdown-item blue" href="recruit.html"><i class="bi bi-person me-3"></i>3 new recruits was added</a></li>
+                      <li><hr class="dropdown-divider blue"></li>
+                      <li><a class="dropdown-item blue" href="blog-login.html"><i class="bi bi-type-bold me-3"></i>New blog updates</a></li>
+                    </ul>
+                  </li>
                 <li class="nav-item">
                     <a class="nav-link me-lg-2" href="profile-page.html">Profile<i class="bi bi-person-circle text-white ms-2"></i></a>
                 </li>
@@ -61,7 +73,7 @@
      </div> 
   </header>
   <main>
-     <div class="container mt-5">
+    <div class="container mt-5">
          <div class="messages-header pb-2">
              <h5 class="fs-4"><a href="recruit-info.html" class="text-decoration-none text-dark"> Recruits Information | </a><span class="fw-bolder">Chats</span></h5>
          </div>
@@ -314,7 +326,7 @@
                               </div>
                           </div>
                            <div class="message-input mx-4 mt-5 position-relative">
-                                <input type="text" placeholder="Write a message..." class="w-100 border-0 py-1 ps-2">
+                                <input type="text" placeholder="Write a message..." class="w-100 border-0 py-1 ps-2" style="outline: none;">
                                 <div class="message-icons position-absolute pe-4 top-0 pt-1 end-0">
                                 <i class="bi bi-mic me-2 pointer"></i>
                                 <i class="bi bi-emoji-smile pointer"></i>
@@ -325,14 +337,11 @@
                               <input  class="rounded-pill border-0 ps-3 w-100 fs-6" type="text" name="" id="" placeholder="Type a message..." style="outline: none;">
                               <img src="./img/Vector (4).png" class="pointer py-1 px-2 rounded-circle ms-2" style="background-color:#fff">
                            </div>
-                         
-
-                     </div>
-                </div>
-          </div>
-        
-           </div>
-     </div>
+                        </div>
+                 </div>
+             </div>
+            </div>
+    </div>
   </main>
         <script src="./js/message.js"></script>
         <script src="./js/bootstrap.min.js"></script>

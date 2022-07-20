@@ -25,6 +25,15 @@ font-family: "Inter", sans-serif !important;
   font-size: 14px;
 }
 
+.blue {
+  color: rgba(39, 118, 234, 1);
+}
+
+.blue:hover {
+  color: #fff;
+  background-color: rgba(39, 118, 234, 0.8);
+}
+
 .rounded-top{
 border-top-left-radius: 5px !important;
 border-top-right-radius: 5px !important;
@@ -95,10 +104,6 @@ font-weight: 500 !important;
 
 .border-primary{
   border-color: #93BBF5 !important;
-}
-
-.messages-header h5{
-  
 }
 
 

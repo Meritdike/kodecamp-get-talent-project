@@ -17,6 +17,15 @@
     background-color: rgba(8, 24, 47, 1);
 }
 
+.blue {
+    color: rgba(39, 118, 234, 1);
+}
+
+.blue:hover {
+    color: #fff;
+    background-color: rgba(39, 118, 234, 0.8);
+}
+
 .fs-14 {
     font-size: 14px;
 }

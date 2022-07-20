@@ -73,6 +73,12 @@
     color: #fff;
 
 }
+
+.R-btn-primary:hover {
+    color: #fff;
+    background: rgb(10, 89, 207);
+}
+
 .R-text-primary{
     color: rgba(39, 118, 234, 1);
 }
