@@ -34,13 +34,13 @@
     display: none;
 }
 
-.blue{
+.blue-recruit{
     background: #2776EA;
     border: #2776EA;
     color: #fff;
     height: 40px !important;
 }
-.blue:hover{
+.blue-recruit:hover{
     color: #fff;
 }
 .outline-blue{
