@@ -87,26 +87,28 @@
                     <button class="btn selet btn-white bg-white select-button" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-expanded="false">
                     <div class="d-flex bg-white">
                       <img src="img/R-icon1.png"class="pe-2">
-                    <select class="selet border-0 fs-lg-3 bg-white  fs-md-4 w-100 fs-sm-5">
-                      <option class="">Career</option>
-                      <option value="" class="">Product design</option>
-                      <option value="" class="">Frontend developer</option>
+                    <select class="selet border-0 fs-lg-3 bg-white  fs-md-4 w-100 fs-sm-5" id="user-select">
+                      <option class="" selected disabled>Career</option>
+                      <option value="Product Design" class="">Product Design</option>
+                      <option value="Frontend Developer" class="">Frontend Developer</option>
                       <li><hr class="dropdown-divider"></li>
-                      <option value=""class="">Backend developer</option>
+                      <option value="Backend Developer"class="">Backend Developer</option>
                       <li><hr class="dropdown-divider"></li>
-                      <option value=""class="">Full stack</option>
+                      <option value="Full Stack"class="">Full Stack</option>
                       <li><hr class="dropdown-divider"></li>
-                      <option value=""class="">Mobile developer</option>
+                      <option value="Mobile Developer"class="">Mobile Developer</option>
                       <li><hr class="dropdown-divider"></li>
-                      <option value=""class="">Web developer</option>
+                      <option value="Android Developer"class="">Android Developer</option>
                       <li><hr class="dropdown-divider"></li>
-                      <option value=""class="">CAD</option>
+                      <option value="Web Developer"class="">Web Developer</option>
                       <li><hr class="dropdown-divider"></li>
-                      <option value=""class="">Data science</option>
+                      <option value="CAD"class="">CAD</option>
                       <li><hr class="dropdown-divider"></li>
-                      <option value=""class="">Product MGT</option>
+                      <option value="Data Science"class="">Data Science</option>
                       <li><hr class="dropdown-divider"></li>
-                      <option value=""class="">Machine language</option>
+                      <option value="Product Management"class="">Product Management</option>
+                      <li><hr class="dropdown-divider"></li>
+                      <option value="Machine Language"class="">Machine Language</option>
                     </select>
                     </div>
                     </button>
@@ -119,7 +121,7 @@
                     <div class="d-flex bg-white ">
                     <img src="img/R-icon2.png"class="pe-2">
                     <select class="selet border-0 w-100 bg-white">
-                      <option class="sele">Job type</option>
+                      <option class="sele" selected disabled>Job type</option>
                       <option>Any</option>
                       <option value=""class="sele">Part-time</option>
                       <option value=""class="sele">Full-time</option>
@@ -141,24 +143,24 @@
                   <button class="selet btn btn-white bg-white select-button" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-expanded="false">
                     <div class="d-flex bg-white">
                     <img src="./img/R-icon3.png"class="pe-2">
-                    <select class="selet w-100 border-0 bg-white">
-                      <option class="selet">Location</option>
-                      <option value=""class="sele">Nigeria</option>
-                      <option value=""class="sele">Ghana</option>
+                    <select class="selet w-100 border-0 bg-white" id="location-select">
+                      <option class="selet" selected disabled>Location</option>
+                      <option value="Nigeria"class="sele">Nigeria</option>
+                      <option value="Ghana"class="sele">Ghana</option>
                       <li><hr class="dropdown-divider"></li>
-                      <option value=""class="sele">South Africa</option>
+                      <option value="SA"class="sele">South Africa</option>
                       <li><hr class="dropdown-divider"></li>
-                      <option value=""class="sele">United kingdom</option>
+                      <option value="UK"class="sele">United kingdom</option>
                       <li><hr class="dropdown-divider"></li>
-                      <option value=""class="sele">Antigua and Barbusa</option>
+                      <option value="Antigua and Barbusa"class="sele">Antigua and Barbusa</option>
                       <li><hr class="dropdown-divider"></li>
-                      <option value=""class="sele">Argentina</option>
+                      <option value="Argentina"class="sele">Argentina</option>
                       <li><hr class="dropdown-divider"></li>
-                      <option value=""class="sele">Armenia</option>
+                      <option value="Armenia"class="sele">Armenia</option>
                       <li><hr class="dropdown-divider"></li>
-                      <option value=""class="sele">Australia</option>
+                      <option value="Australia"class="sele">Australia</option>
                       <li><hr class="dropdown-divider"></li>
-                      <option value=""class="sele">Austria</option>
+                      <option value="Austria"class="sele">Austria</option>
                     </select>
                    
                     </div>
@@ -170,9 +172,9 @@
 
                 <div class="btn2 col-lg-4 d-md-12 d-sm-12">
               <div class=" float-lg-end float-md-none float-sm-none">
-                <a href="recruit-ex.html"><button class="btn search btn-primary border-0 px-5 " type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-expanded="false">
+                <button class="btn search btn-primary border-0 px-5 " type="submit" id="search" data-toggle="dropdown" aria-expanded="false" >
                   Search
-                </button></a>
+                </button>
               </div>
               </div>
               
@@ -218,7 +220,7 @@
 
 <section>
     <div class="sec3 container mt-5 d-flex">
-        <img src="./img/R-vr.png" class="ps-2 pe-3"><h3 class="fw-bold fs-2">Top recruit</h3>
+        <img src="./img/R-vr.png" class="ps-2 pe-3"><h3 class="current-filter fw-bold fs-2">Top recruit</h3>
     </div>
     <div class=" container mt-5 d-lg-flex mx-auto sec3-row1 row ">
         
@@ -227,9 +229,9 @@
             <img src="./img/R-img1.png" class="card-img-top mb-3" alt="...">
             <div class="card-body ">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Kolade Maya</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Backend</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Backend</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">PHP. Django</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Abuja, Nigeria</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Abuja, Nigeria</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -262,9 +264,9 @@
             <img src="./img/R-img2.png" class="card-img-top mb-3"alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Odunlami Oluwafemi</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Product Design</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">UI/UX</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Lagos, Nigeria</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Lagos, Nigeria</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -297,9 +299,9 @@
             <img src="./img/R-img3.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Bakare Aishat</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Frontend Developer</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Frontend Developer</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">JS, React</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">ALome, Togo</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">ALome, Togo</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -336,9 +338,9 @@
             <img src="./img/R-img4.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Temitope Fabian</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">CAD</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">CAD</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">Game tester & Drafter</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">PH city, Nigeria</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">PH city, Nigeria</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -371,9 +373,9 @@
             <img src="./img/R-img5.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Dara Adesua</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Product Management</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Management</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">Product Planning</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Ibadan, Nigeria</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Ibadan, Nigeria</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -406,9 +408,9 @@
             <img src="./img/R-img6.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Orji Clement</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Data Science</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Data Science</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">Data Engineering</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Enugu, Nigeria</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Enugu, Nigeria</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -446,8 +448,8 @@
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Efanga Eretin</span></p>
               <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Frontend Developer</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">Web Development</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Calabar, Nigeria</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary track-name">Web Development</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Calabar, Nigeria</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -480,9 +482,9 @@
             <img src="./img/R-img8.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Ademola Michelle</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Software Developer</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Software Developer</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">Python</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Ibadan, Nigeria</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Ibadan, Nigeria</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -515,9 +517,9 @@
             <img src="./img/R-img9.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Okafor Mary</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Backend Developer</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Backend Developer</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">PHP, Node JS</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Lagos, Nigeria</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Lagos, Nigeria</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -554,9 +556,9 @@
             <img src="./img/R-img10.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Tshabalala David</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Machine Language</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Machine Language</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">Rubi, Java, Python</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Johannesburg, SA</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Johannesburg, SA</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -589,9 +591,9 @@
             <img src="./img/R-img11.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Idurobo Etinosa</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Product Management</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Management</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">Product Planning</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Benin-city, Nigeria</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Benin-city, Nigeria</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -624,9 +626,9 @@
             <img src="./img/R-img12.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Kweku Frimpong</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Data Science</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Data Science</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">SQL</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Accra, Ghana</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Accra, Ghana</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -663,9 +665,9 @@
             <img src="./img/R-img13.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Hakimi Fausi</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">CAD</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">CAD</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">Drafting and Dev.</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Rabat, Morocco</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Rabat, Morocco</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -698,9 +700,9 @@
             <img src="./img/R-img14.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Uhuru Beatrice</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Robotics</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Robotics</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">Automation</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Nairobi, Kenya</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Nairobi, Kenya</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -733,9 +735,9 @@
             <img src="./img/R-img15.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Zaidu Collins</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Frontend Developer</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Frontend Developer</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT:</span><span class="R-text-primary">Mobile Development</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Jos, Nigeria</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Jos, Nigeria</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -772,9 +774,9 @@
             <img src="./img/R-img16.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Cashion Jean</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Machine Language</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Machine Language</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">Fullstack</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Reading, UK</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Reading, UK</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -807,9 +809,9 @@
             <img src="./img/R-img17.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Diouf Moussa</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Frontend developer</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Frontend developer</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">JS, Typescript</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Dakar, Senegal</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Dakar, Senegal</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -842,9 +844,9 @@
             <img src="./img/R-img18.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Ayodele Rafael</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Product Design</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">UI Design</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Akure, Nigeria</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Akure, Nigeria</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -881,9 +883,9 @@
             <img src="./img/R-img19.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Chinero Jacob</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Backend Developer</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Backend Developer</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">PHP, JAVA,Node.JS</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Kigali, Rwanda</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Kigali, Rwanda</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -916,9 +918,9 @@
             <img src="./img/R-img20.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Dharikwe Libambe</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Frontend Developer</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Frontend Developer</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">JS, JAVA, React</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Lusaka, Zambia</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Lusaka, Zambia</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -951,9 +953,9 @@
             <img src="./img/R-img21.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Mensah Peter</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Product Mangement</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Mangement</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">Fullstack</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Kumasi, Ghana</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Kumasi, Ghana</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -989,10 +991,10 @@
         <div class="carrd mb-4 d-flex justify-content-between align-items-center flex-column" >
             <img src="./img/R-img22.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
-              <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Kumasi, Ghana</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">CAD</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Motunde Idris</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">CAD</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT:</span><span class="R-text-primary fs-8">Game tester,Dev&Drafter</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">London, UK</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">London, UK</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -1025,9 +1027,9 @@
             <img src="./img/R-img23.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Ekaete Lucy</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Web Developer</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Web Developer</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">CSS, JS</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Nsukka, Enugu</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Nsukka, Enugu</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -1060,9 +1062,9 @@
             <img src="./img/R-img24.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Halle Dokrathi</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Product Design</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">UI/UX</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Addis Ababa, Ethiopia</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Addis Ababa, Ethiopia</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -1100,9 +1102,9 @@
             <img src="./img/R-img25.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Vijk Cameron</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Android Developer</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Android Developer</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">JAVA, JS, Django</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Capetown, SA</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Capetown, SA</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -1135,9 +1137,9 @@
             <img src="./img/R-img26.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Dehinde Chiamaka</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Full Stack</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Full Stack</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT:</span><span class="R-text-primary fs-12">JS,PHP,React,Node Js</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Lagos, Nigeria</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Lagos, Nigeria</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -1170,9 +1172,9 @@
             <img src="./img/R-img27.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Savwe Johnson</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Data Science</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Data Science</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">SQL</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Freetown, Sierra leone</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Freetown, Sierra leone</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -1209,9 +1211,9 @@
             <img src="./img/R-img28.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Freetown, Sierra leone</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Product Design</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">UI/UX, HTML & CSS</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Texas, USA</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Texas, USA</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -1244,9 +1246,9 @@
             <img src="./img/R-img29.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Etipe Nsikak</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Full Stack</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Full Stack</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">JS, PHP, C++</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Yaounde, Cameroon</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Yaounde, Cameroon</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -1279,9 +1281,9 @@
             <img src="./img/R-img20.png" class="card-img-top mb-3" alt="...">
             <div class="card-body">
               <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Adenuga Enoch</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary">Mobile Developer</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Mobile Developer</span></p>
               <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">JS, Node JS, C++</span></p>
-              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Lagos, Nigeria</span></p>
+              <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary location-name">Lagos, Nigeria</span></p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -1310,6 +1312,1447 @@
           </div>
   
     <!---Another section-->
+
+
+
+        <div class="card-div col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+          <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+              <img src="img/ex-img1.png" class="card-img-top mb-3" alt="...">
+              <div class="card-body">
+                  <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Adebambo
+                          Jadesola</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                          class="R-text-primary">1</span></p>
+                          <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span
+                          class="R-text-primary">UI/UX</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Lagos,
+                          Nigeria</span></p>
+                  <p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                          viewBox="0 0 16 16">
+                          <path
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                      </svg>
+                      <span class="ps-2">(11)</span>
+                  </p>
+                  <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+              </div>
+          </div>
+        </div>
+
+        <div class="card-div col-lg-4 col-md-6 mx-md-auto col-sm-12 mx-sm-auto">
+          <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+              <img src="./img/ex-img3.png" class="card-img-top mb-3" alt="...">
+              <div class="card-body">
+                  <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Musa
+                          Amoda</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                          class="R-text-primary">2</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">UX</span>
+                  </p>
+                  <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Oshobgo,
+                          Nigeria</span></p>
+                  <p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                          viewBox="0 0 16 16">
+                          <path
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                      </svg>
+                      <span class="ps-2">(11)</span>
+                  </p>
+                  <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+              </div>
+          </div>
+        </div>
+
+        <div class="card-div col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+          <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+              <img src="./img/ex-img4.png" class="card-img-top mb-3" alt="...">
+              <div class="card-body">
+                  <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Mundung
+                          Weng</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                          class="R-text-primary">1</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span
+                          class="R-text-primary">UI/UX</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Jalingo,
+                          Nigeria</span></p>
+                  <p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                          viewBox="0 0 16 16">
+                          <path
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                      </svg>
+                      <span class="ps-2">(11)</span>
+                  </p>
+                  <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+              </div>
+          </div>
+        </div>
+
+    <!---Another section-->
+
+
+
+        <div class="card-div col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+          <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+              <img src="./img/ex-img5.png" class="card-img-top mb-3" alt="...">
+              <div class="card-body">
+                  <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Obi
+                          Chimeze</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                          class="R-text-primary">2</span></p>
+                          <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">UI</span>
+                  </p>
+                  <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Owerri,
+                          Nigeria</span></p>
+                  <p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                          viewBox="0 0 16 16">
+                          <path
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                      </svg>
+                      <span class="ps-2">(11)</span>
+                  </p>
+                  <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="card-div col-lg-4 col-md-6 mx-md-auto col-sm-12 mx-sm-auto">
+          <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+              <img src="./img/ex-img6.png" class="card-img-top mb-3" alt="...">
+              <div class="card-body">
+                  <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Aishat
+                          Muibudeen</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                          class="R-text-primary">1</span></p>
+                          <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span
+                          class="R-text-primary">UI/UX</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Ibadan,
+                          Nigeria</span></p>
+                  <p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                          viewBox="0 0 16 16">
+                          <path
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                      </svg>
+                      <span class="ps-2">(11)</span>
+                  </p>
+                  <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="card-div col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+        <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+            <img src="./img/ex-img7.png" class="card-img-top mb-3" alt="...">
+            <div class="card-body">
+                <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Daramola
+                        Adesewa</span></p>
+                <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                        class="R-text-primary">1</span></p>
+                        <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span
+                        class="R-text-primary">UI/UX</span></p>
+                <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Abuja,
+                        Nigeria</span></p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                    </svg>
+                    <span class="ps-2">(11)</span>
+                </p>
+                <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+            </div>
+        </div>
+      </div>
+
+    <!---Another section-->
+
+
+
+      <div class="card-div col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+        <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+            <img src="./img/ex-img8.png" class="card-img-top mb-3" alt="...">
+            <div class="card-body">
+                <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Isreal
+                        Clement</span></p>
+                <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                        class="R-text-primary">1</span></p>
+                        <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span
+                        class="R-text-primary">UI/UX</span></p>
+                <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Lagos,
+                        Nigeria</span></p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                    </svg>
+                    <span class="ps-2">(11)</span>
+                </p>
+                <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+            </div>
+        </div>
+    </div>
+
+      <div class="card-div col-lg-4 col-md-6 col-sm-12 mx-md-auto mx-sm-auto">
+          <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+              <img src="./img/ex-img9.png" class="card-img-top mb-3" alt="...">
+              <div class="card-body">
+                  <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Bakare
+                          Shakiroh</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                          class="R-text-primary">1</span></p>
+                          <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span
+                          class="R-text-primary">UI/UX</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Abuja,
+                          Nigeria</span></p>
+                  <p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                          viewBox="0 0 16 16">
+                          <path
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                      </svg>
+                      <span class="ps-2">(11)</span>
+                  </p>
+                  <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="card-div col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+        <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+            <img src="./img/ex-img10.png" class="card-img-top mb-3" alt="...">
+            <div class="card-body">
+                <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Bakare
+                        Shakiroh</span></p>
+                <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                        class="R-text-primary">1</span></p>
+                        <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span
+                        class="R-text-primary">UI/UX</span></p>
+                <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Abuja,
+                        Nigeria</span></p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                    </svg>
+                    <span class="ps-2">(11)</span>
+                </p>
+                <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+            </div>
+        </div>
+    </div>
+
+  <!---Another section-->
+
+
+        <div class="card-div col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+          <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+              <img src="img/ex-img11.png" class="card-img-top mb-3" alt="...">
+              <div class="card-body">
+                  <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Adewole
+                          Michael</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                          class="R-text-primary">1</span></p>
+                          <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span
+                          class="R-text-primary">UI/UX</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Lagos,
+                          Nigeria</span></p>
+                  <p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                          viewBox="0 0 16 16">
+                          <path
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                      </svg>
+                      <span class="ps-2">(11)</span>
+                  </p>
+                  <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="card-div col-lg-4 col-md-6 col-sm-12 mx-md-auto mx-sm-auto">
+          <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+              <img src="./img/ex-img12.png" class="card-img-top mb-3" alt="...">
+              <div class="card-body">
+                  <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Adewole
+                          Michael</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                          class="R-text-primary">1</span></p>
+                          <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">UI/UX
+                          HTML& CSS</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span
+                          class="R-text-primary">Benin-city, Nigeria</span></p>
+                  <p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                          viewBox="0 0 16 16">
+                          <path
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                      </svg>
+                      <span class="ps-2">(11)</span>
+                  </p>
+                  <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="card-div col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+        <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+            <img src="./img/ex-img13.png" class="card-img-top mb-3" alt="...">
+            <div class="card-body">
+                <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Garba
+                        Abigail</span></p>
+                <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                        class="R-text-primary">2</span></p>
+                        <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span
+                        class="R-text-primary">UI/UX</span></p>
+                <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Auchi,
+                        Nigeria</span></p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                    </svg>
+                    <span class="ps-2">(11)</span>
+                </p>
+                <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+            </div>
+        </div>
+      </div>
+
+    <!---Another section-->
+
+        <div class="card-div col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+          <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+              <img src="img/ex-img16.png" class="card-img-top mb-3" alt="...">
+              <div class="card-body">
+                  <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Onoja
+                          Daniel</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                          class="R-text-primary">3</span></p>
+                          <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">ux</span>
+                  </p>
+                  <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Lokoja,
+                          Nigeria</span></p>
+                  <p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                          viewBox="0 0 16 16">
+                          <path
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                      </svg>
+                      <span class="ps-2">(11)</span>
+                  </p>
+                  <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="card-div col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+          <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+              <img src="./img/ex-img17.png" class="card-img-top mb-3" alt="...">
+              <div class="card-body">
+                  <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Amadi
+                          Augustina</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                          class="R-text-primary">2</span></p>
+                          <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span
+                          class="R-text-primary">UI/UX</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Aba,
+                          Nigeria</span></p>
+                  <p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                          viewBox="0 0 16 16">
+                          <path
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                      </svg>
+                      <span class="ps-2">(11)</span>
+                  </p>
+                  <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="card-div col-lg-4 col-md-6 col-sm-12 mx-md-auto mx-sm-auto">
+        <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+            <img src="./img/ex-img30.png" class="card-img-top mb-3" alt="...">
+            <div class="card-body">
+                <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Moses
+                        Trabaye</span></p>
+                <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                        class="R-text-primary">2</span></p>
+                        <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">UI/UX,
+                        PHP</span></p>
+                <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span
+                        class="R-text-primary">Ijebu-ode, Nigeria</span></p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                    </svg>
+                    <span class="ps-2">(11)</span>
+                </p>
+                <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+            </div>
+        </div>
+      </div>
+
+
+  <!---Another section-->
+
+
+
+      <div class="card-div col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+          <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+              <img src="./img/ex-img19.png" class="card-img-top mb-3" alt="...">
+              <div class="card-body">
+                  <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Ayodele
+                          Rafael</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                          class="R-text-primary">2</span></p>
+                          <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">UI</span>
+                  </p>
+                  <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Akure,
+                          Nigeria</span></p>
+                  <p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                          viewBox="0 0 16 16">
+                          <path
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                      </svg>
+                      <span class="ps-2">(11)</span>
+                  </p>
+                  <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="card-div col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+          <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+              <img src="./img/ex-img20.png" class="card-img-top mb-3" alt="...">
+              <div class="card-body">
+                  <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Atinyoh
+                          Imokha</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                          class="R-text-primary">1</span></p>
+                          <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">UX</span>
+                  </p>
+                  <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Lafia,
+                          Nigeria</span></p>
+                  <p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                          viewBox="0 0 16 16">
+                          <path
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                      </svg>
+                      <span class="ps-2">(11)</span>
+                  </p>
+                  <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="card-div col-lg-4 col-md-6 col-sm-12 mx-md-auto mx-sm-auto">
+          <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+              <img src="./img/ex-img21.png" class="card-img-top mb-3" alt="...">
+              <div class="card-body">
+                  <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Charles
+                          Imoh</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                          class="R-text-primary">2</span></p>
+                          <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span
+                          class="R-text-primary">UI/UX</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Makurdi,
+                          Nigeria</span></p>
+                  <p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                          viewBox="0 0 16 16">
+                          <path
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                      </svg>
+                      <span class="ps-2">(11)</span>
+                  </p>
+                  <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+              </div>
+          </div>
+      </div>
+
+  <!---Another section-->
+
+
+
+        <div class="card-div col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+          <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+              <img src="./img/ex-img14.png" class="card-img-top mb-3" alt="...">
+              <div class="card-body">
+                  <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Egbe
+                          Ethan</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                          class="R-text-primary">1</span></p>
+                          <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span
+                          class="R-text-primary">UI/UX</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Lagos,
+                          Nigeria</span></p>
+                  <p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                          viewBox="0 0 16 16">
+                          <path
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                      </svg>
+                      <span class="ps-2">(11)</span>
+                  </p>
+                  <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="card-div col-lg-4 col-md-6 col-sm-12 mx-md-auto mx-sm-auto">
+          <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+              <img src="./img/ex-img15.png" class="card-img-top mb-3" alt="...">
+              <div class="card-body">
+                  <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Soronnadi
+                          Lois</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                          class="R-text-primary">1</span></p>
+                          <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span
+                          class="R-text-primary">UI/UX</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Asaba,
+                          Nigeria</span></p>
+                  <p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                          viewBox="0 0 16 16">
+                          <path
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                      </svg>
+                      <span class="ps-2">(11)</span>
+                  </p>
+                  <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="card-div col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+        <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+            <img src="./img/ex-img22.png" class="card-img-top mb-3" alt="...">
+            <div class="card-body">
+                <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Park Lu
+                        Chen</span></p>
+                <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                        class="R-text-primary">3</span></p>
+                <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">UI/UX,
+                        JS</span></p>
+                        <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Lagos,
+                        Nigeria</span></p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                    </svg>
+                    <span class="ps-2">(11)</span>
+                </p>
+                <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+            </div>
+        </div>
+    </div>
+
+  <!---Another section-->
+
+
+
+      <div class="card-div col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+          <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+              <img src="./img/ex-img23.png" class="card-img-top mb-3" alt="...">
+              <div class="card-body">
+                  <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Idris
+                          Matilda</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                          class="R-text-primary">2</span></p>
+                          <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span
+                          class="R-text-primary">UI/UX</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Abeokuta,
+                          Nigeria</span></p>
+                  <p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                          viewBox="0 0 16 16">
+                          <path
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                      </svg>
+                      <span class="ps-2">(11)</span>
+                  </p>
+                  <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="card-div col-lg-4 col-md-6 col-sm-12 mx-md-auto mx-sm-auto">
+          <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+              <img src="./img/ex-img24.png" class="card-img-top mb-3" alt="...">
+              <div class="card-body">
+                  <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Coker
+                          Thompson</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                          class="R-text-primary">3</span></p>
+                          <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span
+                          class="R-text-primary">UI/UX</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Lagos,
+                          Nigeria</span></p>
+                  <p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                          viewBox="0 0 16 16">
+                          <path
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                      </svg>
+                      <span class="ps-2">(11)</span>
+                  </p>
+                  <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="card-div col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+          <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+              <img src="./img/ex-img25.png" class="card-img-top mb-3" alt="...">
+              <div class="card-body">
+                  <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Okonkwo
+                          Kenneth</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                          class="R-text-primary">2</span></p>
+                          <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span
+                          class="R-text-primary">UI/UX</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Uyo,
+                          Nigeria</span></p>
+                  <p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+    
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+    
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+    
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+    
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                          viewBox="0 0 16 16">
+                          <path
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                      </svg>
+                      <span class="ps-2">(11)</span>
+                  </p>
+                  <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+              </div>
+          </div>
+      </div>
+
+  <!---Another section-->
+
+
+
+      <div class="card-div col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+          <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+              <img src="./img/ex-img26.png" class="card-img-top mb-3" alt="...">
+              <div class="card-body">
+                  <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Bayero
+                          Funmilola</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                          class="R-text-primary">2</span></p>
+                          <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span
+                          class="R-text-primary">UI/UX</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Sokoto,
+                          Nigeria</span></p>
+                  <p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                          viewBox="0 0 16 16">
+                          <path
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                      </svg>
+                      <span class="ps-2">(11)</span>
+                  </p>
+                  <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="card-div col-lg-4 col-md-6 col-sm-12 mx-md-auto mx-sm-auto">
+          <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+              <img src="./img/ex-img27.png" class="card-img-top mb-3" alt="...">
+              <div class="card-body">
+                  <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Adeleke
+                          Oyindamola</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                          class="R-text-primary">1</span></p>
+                          <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span
+                          class="R-text-primary">UI/UX</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Lagos,
+                          Nigeria</span></p>
+                  <p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                          viewBox="0 0 16 16">
+                          <path
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                      </svg>
+                      <span class="ps-2">(11)</span>
+                  </p>
+                  <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="card-div col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+          <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+              <img src="./img/ex-img28.png" class="card-img-top mb-3" alt="...">
+              <div class="card-body">
+                  <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Shuaib
+                          Adebimpe</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                          class="R-text-primary">3</span></p>
+                          <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span class="R-text-primary">ui</span>
+                  </p>
+                  <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Ilorin,
+                          Nigeria</span></p>
+                  <p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                          viewBox="0 0 16 16">
+                          <path
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                      </svg>
+                      <span class="ps-2">(11)</span>
+                  </p>
+                  <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+              </div>
+          </div>
+      </div>
+
+
+  <!---Another section-->
+
+
+      <div class="card-div col-lg-4 col-md-6 col-sm-12 mx-sm-auto">
+          <div class="carrd mb-4 d-flex justify-content-center align-items-center flex-column" >
+              <img src="./img/ex-img29.png" class="card-img-top mb-3" alt="...">
+              <div class="card-body">
+                  <p class="card-text mb-1"><span class="fw-bold">NAME: </span><span class="R-text-primary">Abdullahi
+                          Danladi</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">YEARS OF EXPERIENCE: </span><span
+                          class="R-text-primary">3</span></p>
+                          <p class="card-text mb-1"><span class="fw-bold">TRACK: </span><span class="R-text-primary track-name">Product Design</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">STRENGHT: </span><span
+                          class="R-text-primary">UI/UX</span></p>
+                  <p class="card-text mb-1"><span class="fw-bold">LOCATION: </span><span class="R-text-primary">Zaria,
+                          Kaduna</span></p>
+                  <p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9A00"
+                          class="bi bi-star-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class=""
+                          viewBox="0 0 16 16">
+                          <path
+                              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                      </svg>
+                      <span class="ps-2">(11)</span>
+                  </p>
+                  <a href="sign-in.html" class="btn R-btn-primary fw-bold px-5">View</a>
+              </div>
+          </div>
+      </div>
+
+</div>
+<!---Another section-->
     
   </section>
 <section class="pt-5">
@@ -1395,6 +2838,7 @@
 </footer>
 
 
+<script src="js/recruits.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
