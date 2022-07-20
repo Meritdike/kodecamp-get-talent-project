@@ -34,6 +34,44 @@
     display: none;
 }
 
+.blue{
+    background: #2776EA;
+    border: #2776EA;
+    color: #fff;
+    height: 40px !important;
+}
+.blue:hover{
+    color: #fff;
+}
+.outline-blue{
+    border: 1px solid #000000;
+    color: #2B2B2B;
+    height: 40px !important;
+}
+.outline-blue:hover{
+    background: #2776EA !important;
+    border: 1px solid #2776EA;
+    color: #fff;
+}
+.input-box{
+    color: #000000;
+    background-color: #F5F5F5;
+    padding: 10px 15px;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+}
+.input-box1{
+    color: #000000;
+    background-color: #F5F5F5;
+    padding: 20px 20px 40px;
+    border-radius: 5px;
+    /* height: 100%; */
+    width: 100%;
+}
+.information-t label{
+    color: #555555 !important;
+}
 @media (max-width: 992px) {
     .mobile {
         display: block;
