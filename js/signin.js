@@ -15,7 +15,7 @@ password.addEventListener('input', changeButtonColor);
 
 function iconDisplay() {
     if (!(onfocus)) {
-        togglePassword.classList.add("icon-display");
+        // togglePassword.classList.add("icon-display");
     }
 }
 
