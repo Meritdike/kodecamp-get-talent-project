@@ -13,3 +13,26 @@ window.localStorage.setItem("recruiterSize", recruiterSize);
 window.localStorage.setItem("recruiterSalary", recruiterSalary);
 window.localStorage.setItem("recruiterLocation", recruiterLocation);
 window.localStorage.setItem("recruiterAbout", recruiterAbout);
+
+
+if (document.referrer === "https://meritdike.github.io/kodecamp-get-talent-project/updated-pp.html") {
+    renderProfileUpdate();
+}
+
+function renderProfileUpdate() {
+    let recruiterProfileNameUpdate = document.querySelector(".name-update");
+    let recruiterProfileCompanyUpdate = document.querySelector(".company-update");
+    let recruiterProfileTypeUpdate = document.querySelector(".type-update");
+    let recruiterProfileSizeUpdate = document.querySelector(".size-update");
+    let recruiterProfileSalaryUpdate = document.querySelector(".salary-update");
+    let recruiterProfileLocationUpdate = document.querySelector(".location-update");
+    let recruiterProfileAboutUpdate = document.querySelector(".about-update");
+
+    recruiterProfileNameUpdate.innerText = localStorage.getItem("recruiterNameUpdate");
+    recruiterProfileCompanyUpdate.innerText = localStorage.getItem("recruiterCompanyUpdate");
+    recruiterProfileTypeUpdate.innerText = localStorage.getItem("recruiterTypeUpdate");
+    recruiterProfileSizeUpdate.innerText = localStorage.getItem("recruiterSizeUpdate");
+    recruiterProfileSalaryUpdate.innerText = localStorage.getItem("recruiterSalaryUpdate");
+    recruiterProfileLocationUpdate.innerText = localStorage.getItem("recruiterLocationUpdate");
+    recruiterProfileAboutUpdate.innerText = localStorage.getItem("recruiterAboutUpdate");
+}

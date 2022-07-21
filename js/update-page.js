@@ -14,3 +14,31 @@ recruiterSalaryInput.value = localStorage.getItem("recruiterSalary")
 recruiterLocationInput.value = localStorage.getItem("recruiterLocation")
 recruiterAboutInput.value = localStorage.getItem("recruiterAbout")
 
+
+let save = document.getElementById("save");
+
+save.addEventListener('click', updateFunction);
+
+function updateFunction() {
+    let recruiterNameUpdate = recruiterNameInput.value;
+    window.localStorage.setItem("recruiterNameUpdate", recruiterNameUpdate);
+    console.log(recruiterNameUpdate);
+    let recruiterCompanyUpdate = recruiterCompanyInput.value;
+    window.localStorage.setItem("recruiterCompanyUpdate", recruiterCompanyUpdate);
+    console.log(recruiterCompanyUpdate);
+    let recruiterTypeUpdate = recruiterTypeInput.value;
+    window.localStorage.setItem("recruiterTypeUpdate", recruiterTypeUpdate);
+    console.log(recruiterTypeUpdate);
+    let recruiterSizeUpdate = recruiterSizeInput.value;
+    window.localStorage.setItem("recruiterSizeUpdate", recruiterSizeUpdate);
+    console.log(recruiterSizeUpdate);
+    let recruiterSalaryUpdate = recruiterSalaryInput.value;
+    window.localStorage.setItem("recruiterSalaryUpdate", recruiterSalaryUpdate);
+    console.log(recruiterSalaryUpdate);
+    let recruiterLocationUpdate = recruiterLocationInput.value;
+    window.localStorage.setItem("recruiterLocationUpdate", recruiterLocationUpdate);
+    console.log(recruiterLocationUpdate);
+    let recruiterAboutUpdate = recruiterAboutInput.value;
+    window.localStorage.setItem("recruiterAboutUpdate", recruiterAboutUpdate);
+    console.log(recruiterAboutUpdate);
+}
