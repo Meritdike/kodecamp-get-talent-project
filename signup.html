@@ -42,27 +42,38 @@
                 <div id="form-body" class="col-lg-6 col-md-6 position-relative mb-lg-5">
                     <div id="signup-form" class="px-lg-4 py-4 px-4" style="background-color: #D4E4FB; border-radius: 20px; opacity: 0.9;">
                         <h2 class="text-center fw-bold pb-1" style="color: #2B2B2B;">Let's Get You Started</h2>
-                        <form action="#">
+                        <form action="#" class="needs-validation" novalidate>
                             <div  id="signup-with-google" class="my-lg-2">
                                 <a href="signup_google.html" class="text-decoration-none d-block text-center border-white bg-white py-lg-3 py-2 my-4 rounded" style="border-color: #777 !important; color: #555;"><img src="img/Group.png" class="img-fluid me-2" alt="">Join with Google</a>
                            </div>
                             <div class="mb-3"  id="full-name">
-                                <input type="name" class="form-control border-0 py-lg-3 py-md-2" id="name" placeholder="Full Name" required style="color: #555;">
+                                <input type="text" class="form-control border-0 py-lg-3 py-md-2" id="name" placeholder="Full Name" required style="color: #555;">
+                                <div class="invalid-feedback">
+                                    Input valid characters!
+                                </div>
                             </div>
                             <div class="mb-3" id="input-email">
                                 <input type="email" class="form-control border-0 py-lg-3 py-md-2" id="email" placeholder="Email Address" required style="color: #555;">
+                                <div class="invalid-feedback">
+                                    Input a valid email address!
+                                </div>
                             </div>
                             <div class="mb-3 icon-wrap position-relative" id="input-password">
-                                <input type="password" class="form-control border-0 py-lg-3 py-md-2" placeholder="Password" pattern=".{8,}" id="password" required style="color: #555;">
+                                <input type="password" class="form-control border-0 py-lg-3 py-md-2" placeholder="Password" id="password" required style="color: #555;">
                                 <i class="bi bi-eye-slash icon fs-5 position-absolute" style="top: 25%; right: 5%; cursor: pointer; visibility: hidden;" id="eyeicon"></i>
+                                <div class="invalid-feedback">
+                                    Password should be greater than 8 letters!
+                                </div>
                             </div>
                             <div id="submit-btn">
                                 <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="signup" class="text-decoration-none btn btn-primary border-0 text-white py-lg-3 py-md-2 fw-bold w-100" style="font-size: 22px;">Join Now</a>
                             </div>
                             <div class=" mt-md-2 mb-md-2 pb-1 my-3" id="sign-up-text">
-                                <p class="fs-6 mb-0" style="color: #555;">
-                                     <input type="checkbox" id="checkbox">
-                                    Yes, I would like to receive Get Talent marketing communications. By signing up, you agree to our <a href="#" class="text-decoration-none">T&Cs</a> and the storing of your data as per our <a href="#" class="text-decoration-none">Privacy Statement.</a></p>
+                                <p class="fs-6 mb-0 form-check" style="color: #555;">
+                                     <input type="checkbox" class="form-check-input" id="checkbox" required>
+                                    Yes, I would like to receive Get Talent marketing communications. By signing up, you agree to our <a href="#" class="text-decoration-none">T&Cs</a> and the storing of your data as per our <a href="#" class="text-decoration-none">Privacy Statement.</a>
+                                    <div class="invalid-feedback">Example invalid feedback text</div>
+                                </p>
                             </div> 
                         </form>
                     </div>
@@ -120,6 +131,19 @@
     </div>
                           
     </section>
+    <script>
+        let forms = document.querySelectorAll(".needs-validation");
+
+        Array.prototype.slice.call(forms).forEach(form => {
+            form.addEventListener("click", event => {
+                if (! form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add("was-validated");
+            }, false)
+        });
+    </script>
     <script src="js/signup.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>

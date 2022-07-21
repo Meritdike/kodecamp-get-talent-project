@@ -44,38 +44,44 @@
                 <div class="col-lg-6 col-md-6 position-relative mb-lg-5 mb-3">
                     <div class="sign-in-form px-lg-4 py-lg-5 px-md-3 py-md-4 px-4 pt-4 pb-3" style="background-color: #D4E4FB; border-radius: 20px; opacity: 0.9;">
                         <h2 class="text-center fw-bold pb-lg-4 pb-md-3 pb-2" style="color: #2B2B2B;">Welcome Back...</h2>
-                        <form action="#">
+                        <form action="#" class="needs-validation" novalidate>
                             <div class="email-form mb-3">
                                 <input type="email" class="form-control border-0 py-lg-3 py-md-2" id="email" placeholder="Email Address" required style="color: #555;">
+                                <div class="invalid-feedback">
+                                    Input a valid email address!
+                                </div>
                             </div>
                             <div class="password-form mb-3 icon-wrap position-relative">
                                 <input type="password" class="form-control border-0 py-lg-3 py-md-2" placeholder="Password" id="password" required style="color: #555;">
                                 <i class="bi bi-eye-slash icon fs-5 position-absolute" style="top: 25%; right: 5%; cursor: pointer; visibility: hidden;" id="toggle-password"></i>
+                                <div class="invalid-feedback">
+                                    Incorrect password!
+                                </div>
                             </div>
                             <p id="password-info" style="color: #555;"></p>
                             <div class="submit-form">
-                                <a href="home.html" class="text-decoration-none btn btn-primary border-0 text-white py-lg-3 py-md-2 fw-bold w-100" style="font-size: 22px;" id="signin">Sign In</a>
-                            </div>
-                            <div class="forgot-password text-center mt-lg-3 mb-lg-5 mt-md-2 mb-md-3 my-3">
-                                <a href="forgot_password_email.html" class="text-decoration-none" style="color: #555;">Forgot Password?</a>
-                            </div>
-                            <div class="form-or text-center">
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-5 col-sm-5 col-5">
-                                        <img src="img/form-or-img.png" class="img-fluid" alt="Border line">
-                                    </div>
-                                    <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-                                        <p style="color: #555;">or</p>
-                                    </div>
-                                    <div class="col-lg-5 col-md-5 col-sm-5 col-5">
-                                        <img src="img/form-or-img.png" class="img-fluid" alt="Border line">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="sign-in-google my-lg-5">
-                                <a href="sign-in-google.html" class="text-decoration-none d-block text-center border py-3 rounded" style="border-color: #777 !important; color: #555;"><img src="img/sign-in-google.png" class="img-fluid me-2" alt="">Sign in with Google</a>
+                                <a href="home.html" type="submit" class="text-decoration-none btn btn-primary border-0 text-white py-lg-3 py-md-2 fw-bold w-100" style="font-size: 22px;" id="signin">Sign In</a>
                             </div>
                         </form>
+                        <div class="forgot-password text-center mt-lg-3 mb-lg-5 mt-md-2 mb-md-3 my-3">
+                            <a href="forgot_password_email.html" class="text-decoration-none" style="color: #555;">Forgot Password?</a>
+                        </div>
+                        <div class="form-or text-center">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-5">
+                                    <img src="img/form-or-img.png" class="img-fluid" alt="Border line">
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                    <p style="color: #555;">or</p>
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-sm-5 col-5">
+                                    <img src="img/form-or-img.png" class="img-fluid" alt="Border line">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sign-in-google my-lg-5">
+                            <a href="sign-in-google.html" class="text-decoration-none d-block text-center border py-3 rounded" style="border-color: #777 !important; color: #555;"><img src="img/sign-in-google.png" class="img-fluid me-2" alt="">Sign in with Google</a>
+                        </div>
                     </div>
                     <img src="img/form-bottom-circle.png" class="img-fluid position-absolute" alt="" style="transform: translateY(-40%);margin-left: -40px !important; z-index: -1;">
                 </div>
@@ -89,6 +95,19 @@
     </section>
 
     <!-- custom js -->
+    <script>
+        let forms = document.querySelectorAll(".needs-validation");
+
+        Array.prototype.slice.call(forms).forEach(form => {
+            form.addEventListener("click", event => {
+                if (! form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add("was-validated");
+            }, false)
+        });
+    </script>
     <script src="js/signin.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>

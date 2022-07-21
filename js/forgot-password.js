@@ -1,8 +1,8 @@
-const userName = document.getElementById("name");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
+const confirmPassword = document.getElementById("confirmPassword");
 const togglePassword = document.getElementById("eyeicon");
-const signUp = document.getElementById("signup");
+const sendBtn = document.getElementById("send-btn")
 
 togglePassword.addEventListener('click', function () {
     const type = password.getAttribute("type") === "password" ? "text" : "password";
@@ -11,8 +11,12 @@ togglePassword.addEventListener('click', function () {
     this.classList.toggle("bi-eye");
 });
 
+
 password.addEventListener('focus', iconDisplay);
+confirmPassword.addEventListener('focus', iconDisplay);
 password.addEventListener('input', changeButtonColor);
+confirmPassword.addEventListener('input', changeButtonColor);
+email.addEventListener('input', changeButtonColor);
 
 function iconDisplay() {
     if (!(onfocus)) {
@@ -20,22 +24,6 @@ function iconDisplay() {
     }
 }
 
-email.addEventListener('input', changeButtonColor);
-userName.addEventListener('input', changeButtonColor);
-
 function changeButtonColor() {
-    signUp.classList.add("button-active-color")
-}
-
-
-signUp.addEventListener('click', signupSuccess);
-
-function signupSuccess(e) {
-    e.preventDefault();
-
-    if (email.value && password.value && userName.value) {
-        window.location.href = 'home.html';
-    } else {
-        alert("All inputs must be filled and password must be at least 8 letters!");
-    }
+    sendBtn.classList.add("button-active-color")
 }
