@@ -34,7 +34,7 @@ function signupSuccess(e) {
     e.preventDefault();
 
     if (email.value && password.value && userName.value) {
-        window.location.href = 'home.html';
+        window.location.href = '#staticBackdrop';
     } else {
         alert("All inputs must be filled and password must be at least 8 letters!");
     }
