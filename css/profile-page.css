@@ -15,13 +15,13 @@ body{font-family: 'Inter', sans-serif;}
 .mobile {
     display: none;
 }
-.img2 {
+/* .img2 {
     height: 28vh;
 }
 .img1 {
     top: 30%;
     height: 35vh;
-}
+} */
 .blue {
     color: rgba(39, 118, 234, 1);
 }
